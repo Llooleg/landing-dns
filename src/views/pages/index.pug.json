@@ -1,0 +1,862 @@
+{
+	"CommonSettings": {
+		"pageName": "index",
+		"title": "DNS | Бытовая техника Gorenje",
+		"html": {
+			"attrs": {},
+			"modes": []
+		},
+		"body": {
+			"attrs": {},
+			"modes": []
+		},
+		"main": {
+			"attrs": {},
+			"modes": []
+		}
+	},
+	"PartHeaderData": {
+		"logoList": [
+			{
+				"linkUrl": "#body",
+				"elementModes": ["main"],
+				"url": "/src/assets/images/common/logo.svg",
+				"alt": "Текстовый логотип 'gorenje Делает жизнь лучше'",
+				"isObjectFitCover": false,
+				"responsivePhoto": [
+					{
+						"url": "/src/assets/images/common/logo-mobile.svg"
+					}
+				]
+			},
+			{
+				"linkUrl": "https://www.dns-shop.ru",
+				"target": "_blank",
+				"elementModes": ["dns"],
+				"url": "/src/assets/images/common/dns-logo.svg",
+				"alt": "Текстовый логотип 'DNS цифровая и бытовая техника'",
+				"isObjectFitCover": false
+			}
+		]
+	},
+	"CommonNavigationData": {
+		"list": [
+			{
+				"url": "#section-cooking",
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/cooking.svg",
+						"alt": "Иконка 'Горячая тарелка с едой'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Приготовление еды"
+			},
+			{
+				"url": "#section-washing-dishes",
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/washing-dishes.svg",
+						"alt": "Иконка 'Тарелка с вилкой и ножом'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Мытье посуды"
+			},
+			{
+				"url": "#section-freezing",
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/freezing.svg",
+						"alt": "Иконка 'Снежинка'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Охлаждение и заморозка"
+			},
+			{
+				"url": "#section-clothes",
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/clothes.svg",
+						"alt": "Иконка 'Кардиган'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Уход за одеждой"
+			},
+			{
+				"modes": ["border-color-red"],
+				"url": "#section-oraito",
+				"title": "Дизайн-линия",
+				"logo": {
+					"url": "/src/assets/images/common/oraito-logo.svg",
+					"alt": "Текстовый логотип дизайн-линии 'Ora-ïto'",
+					"isObjectFitCover": false
+				}
+			},
+			{
+				"modes": ["border-color-green"],
+				"url": "#section-simplicity",
+				"title": "Дизайн-линия",
+				"logo": {
+					"url": "/src/assets/images/common/simplicity-logo.svg",
+					"alt": "Текстовый логотип дизайн-линии 'Simplicity'",
+					"isObjectFitCover": false
+				}
+			}
+		]
+	},
+	"SectionHeroData": {
+		"slider": {
+			"id": "section-hero",
+			"settings": {
+				"perPage": 1,
+				"type": "loop",
+				"arrows": true,
+				"autoplay": true,
+				"interval": 7500
+			},
+			"pagination": {},
+			"navigation": {}
+		},
+		"list": [
+			{
+				"url": "https://www.dns-shop.ru/actions/5514ed86-c008-11ee-91ae-00155d8ed20b/?erid=2SDnjd1H6Up",
+				"photo": {
+					"url": "/src/assets/images/posters/sale.jpg",
+					"url2x": "/src/assets/images/posters/sale@2x.jpg",
+					"alt": "Скидки 15% при покупке крупной бытовой техники gorenje!",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/posters/sale-mobile.jpg 1x, /src/assets/images/posters/sale-mobile@2x.jpg 2x"
+						}
+					]
+				}
+			},
+			{
+				"url": "https://www.dns-shop.ru/catalog/17a8d0b816404e77/varochnye-paneli-elektricheskie/?brand=gorenje",
+				"photo": {
+					"url": "/src/assets/images/posters/cooking-surface.jpg",
+					"url2x": "/src/assets/images/posters/cooking-surface@2x.jpg",
+					"alt": "Варочные поверхности - больше места для кулинарных фантазий.",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/posters/cooking-surface-mobile.jpg 1x, /src/assets/images/posters/cooking-surface-mobile@2x.jpg 2x"
+						}
+					]
+				}
+			},
+			{
+				"url": "https://www.dns-shop.ru/catalog/17a8d18c16404e77/duxovye-shkafy-elektricheskie/?brand=gorenje",
+				"photo": {
+					"url": "/src/assets/images/posters/appliances.jpg",
+					"url2x": "/src/assets/images/posters/appliances@2x.jpg",
+					"alt": "Духовые шкафы - Техника Gorenje —надёжный и верный помощник у вас дома.",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/posters/appliances-mobile.jpg 1x, /src/assets/images/posters/appliances-mobile@2x.jpg 2x"
+						}
+					]
+				}
+			},
+			{
+				"url": "https://www.dns-shop.ru/catalog/4e2a7cdb390b7fd7/xolodilniki/?brand=gorenje",
+				"photo": {
+					"url": "/src/assets/images/posters/fridge.jpg",
+					"url2x": "/src/assets/images/posters/fridge@2x.jpg",
+					"alt": "Холодильники - Мы делаем вашу жизнь проще, вы делаете её совершённой.",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/posters/fridge-mobile.jpg 1x, /src/assets/images/posters/fridge-mobile@2x.jpg 2x"
+						}
+					]
+				}
+			},
+			{
+				"url": "#section-oraito",
+				"photo": {
+					"url": "/src/assets/images/posters/ora-ito.jpg",
+					"url2x": "/src/assets/images/posters/ora-ito@2x.jpg",
+					"alt": "Коллекция созданная известным французским дизайнером Ora Ita",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/posters/ora-ito-mobile.jpg 1x, /src/assets/images/posters/ora-ito-mobile@2x.jpg 2x"
+						}
+					]
+				}
+			},
+			{
+				"url": "#section-simplicity",
+				"photo": {
+					"url": "/src/assets/images/posters/simplecity.jpg",
+					"url2x": "/src/assets/images/posters/simplecity@2x.jpg",
+					"alt": "Стильный минималистичный дизайн",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/posters/simplecity-mobile.jpg 1x, /src/assets/images/posters/simplecity-mobile@2x.jpg 2x"
+						}
+					]
+				}
+			}
+		]
+	},
+	"SectionCategoryCookingData": {
+		"id": "section-cooking",
+		"title": "Приготовление еды",
+		"categoryList": [
+			{
+				"caption": "Варочные <br/>панели",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/cooktops.png",
+					"url2x": "/src/assets/images/categories/cooktops@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/cooktops-mobile.png 1x, /src/assets/images/categories/cooktops-mobile@2x.png 2x"
+						}
+					]
+				}
+			},
+			{
+				"caption": "Духовые <br/>шкафы",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/ovens.png",
+					"url2x": "/src/assets/images/categories/ovens@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/ovens-mobile.png 1x, /src/assets/images/categories/ovens-mobile@2x.png 2x"
+						}
+					]
+				}
+			},
+			{
+				"caption": "Плиты",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/plates.png",
+					"url2x": "/src/assets/images/categories/plates@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/plates-mobile.png 1x, /src/assets/images/categories/plates-mobile@2x.png 2x"
+						}
+					]
+				}
+			}
+		],
+		"previewVideoList": [
+			{
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/cooking-gorenje-opti-bake-oven.jpg",
+					"url2x": "/src/assets/images/video-preview/cooking-gorenje-opti-bake-oven@2x.jpg"
+				},
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/space.svg",
+						"alt": "Иконка 'Пространство'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Духовой шкаф Gorenje OptiBake. Многоуровневое приготовление и просторная духовка BigSpace.",
+				"popup": {
+					"content": {
+						"video-youtube": "u_4NR_chPIg"
+					}
+				}
+			},
+			{
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/cooking-air-fry.jpg",
+					"url2x": "/src/assets/images/video-preview/cooking-air-fry@2x.jpg"
+				},
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/airfry.svg",
+						"alt": "Иконка 'Воздух и отсутствие влаги'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "AirFry. Запекание с золотистой корочкой без использования масла",
+				"popup": {
+					"content": {
+						"video-youtube": "YiiF-bUiGak"
+					}
+				}
+			}
+		]
+	},
+	"SectionCategoryWashingDishesData": {
+		"id": "section-washing-dishes",
+		"title": "Мытье посуды",
+		"categoryList": [
+			{
+				"caption": "Посудомоечные <br/>машины",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/dishwashers.png",
+					"url2x": "/src/assets/images/categories/dishwashers@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/dishwashers-mobile.png 1x, /src/assets/images/categories/dishwashers-mobile@2x.png 2x"
+						}
+					]
+				}
+			},
+			{
+				"caption": "Встраиваемые <br/>посудомоечные машины",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/built-in-dishwashers.png",
+					"url2x": "/src/assets/images/categories/built-in-dishwashers@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/built-in-dishwashers-mobile.png 1x, /src/assets/images/categories/built-in-dishwashers-mobile@2x.png 2x"
+						}
+					]
+				}
+			}
+		],
+		"previewVideoList": [
+			{
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/washing-dishes-how-to-load-the-dishwasher.jpg",
+					"url2x": "/src/assets/images/video-preview/washing-dishes-how-to-load-the-dishwasher@2x.jpg"
+				},
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/large-load.svg",
+						"alt": "Иконка 'Большая нагрузка'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Gorenje SmartFlex посудомоечные машины. Как загружать посудомоечную машину.",
+				"popup": {
+					"content": {
+						"video-youtube": "tkGGA80cq9k"
+					}
+				}
+			},
+			{
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/washing-dishes-how-to-wash-16-sets-of-dishes-at-a-time.jpg",
+					"url2x": "/src/assets/images/video-preview/washing-dishes-how-to-wash-16-sets-of-dishes-at-a-time@2x.jpg"
+				},
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/dishes-sets.svg",
+						"alt": "Иконка 'Вилка, тарелка и ложка'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Gorenje SmartFlex посудомоечные машины. Как вымыть 16 комплектов посуды за раз. ",
+				"popup": {
+					"content": {
+						"video-youtube": "FWh4rIRoQqY"
+					}
+				}
+			}
+		]
+	},
+	"SectionCategoryFreezingData": {
+		"id": "section-freezing",
+		"title": "Охлаждение и заморозка",
+		"categoryList": [
+			{
+				"caption": "Холодильники <br/>Side-by-side",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/refrigerators-side-by-side.png",
+					"url2x": "/src/assets/images/categories/refrigerators-side-by-side@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/refrigerators-side-by-side-mobile.png 1x, /src/assets/images/categories/refrigerators-side-by-side-mobile@2x.png 2x"
+						}
+					]
+				}
+			},
+			{
+				"caption": "Холодильники <br/>двухдверные",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/two-door-cooler.png",
+					"url2x": "/src/assets/images/categories/two-door-cooler@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/two-door-cooler-mobile.png 1x, /src/assets/images/categories/two-door-cooler-mobile@2x.png 2x"
+						}
+					]
+				}
+			},
+			{
+				"caption": "Морозильные <br/>лари",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/freezer-bins.png",
+					"url2x": "/src/assets/images/categories/freezer-bins@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/freezer-bins-mobile.png 1x, /src/assets/images/categories/freezer-bins-mobile@2x.png 2x"
+						}
+					]
+				}
+			}
+		],
+		"previewVideoList": [
+			{
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/cooling-and-freezing-fantasies-become-more-real.jpg",
+					"url2x": "/src/assets/images/video-preview/cooling-and-freezing-fantasies-become-more-real@2x.jpg"
+				},
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/snowflake.svg",
+						"alt": "Иконка 'Снежинка'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Фантазии становятся реальнее. Вместе с двухкамерной моделью холодильника Gorenje",
+				"popup": {
+					"content": {
+						"video-youtube": "3PQLpvVAwhc"
+					}
+				}
+			},
+			{
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/cooling-and-freezing-gorenje-sidebyside-multi-door-refrigerators.jpg",
+					"url2x": "/src/assets/images/video-preview/cooling-and-freezing-gorenje-sidebyside-multi-door-refrigerators@2x.jpg"
+				},
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/adapttech.svg",
+						"alt": "Иконка 'Холодильник'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Многодверные холодильники GORENJE SideBySide",
+				"popup": {
+					"content": {
+						"video-youtube": "5wgatbzCOm4"
+					}
+				}
+			}
+		]
+	},
+	"SectionCategoryClothesData": {
+		"id": "section-clothes",
+		"title": "Уход за одеждой",
+		"categoryList": [
+			{
+				"caption": "Стиральные <br/>машины",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/washing-machines.png",
+					"url2x": "/src/assets/images/categories/washing-machines@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/washing-machines-mobile.png 1x, /src/assets/images/categories/washing-machines-mobile@2x.png 2x"
+						}
+					]
+				}
+			},
+			{
+				"caption": "Сушильные <br/>машины",
+				"modulePhoto": {
+					"url": "/src/assets/images/categories/drying-machines.png",
+					"url2x": "/src/assets/images/categories/drying-machines@2x.png",
+					"responsivePhoto": [
+						{
+							"url": "/src/assets/images/categories/drying-machines-mobile.png 1x, /src/assets/images/categories/drying-machines-mobile@2x.png 2x"
+						}
+					]
+				}
+			}
+		],
+		"previewVideoList": [
+			{
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/wave-active-with-steam-tech.jpg",
+					"url2x": "/src/assets/images/video-preview/wave-active-with-steam-tech@2x.jpg"
+				},
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/steamtech.svg",
+						"alt": "Иконка 'Пар'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Стиральные машины WaveActive с обработкой паром SteamTech",
+				"popup": {
+					"content": {
+						"video-youtube": "Ii-wEuNbM-Y"
+					}
+				}
+			},
+			{
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/clothing-careo-wave-active-washing-machines-unique-advantages.jpg",
+					"url2x": "/src/assets/images/video-preview/clothing-careo-wave-active-washing-machines-unique-advantages@2x.jpg"
+				},
+				"partIconBox": {
+					"icon": {
+						"url": "/src/assets/images/common/waveactive.svg",
+						"alt": "Иконка 'Волна'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Стиральные машины WaveActive – уникальные преимущества",
+				"popup": {
+					"content": {
+						"video-youtube": "VvAbPL8ZaBY"
+					}
+				}
+			}
+		]
+	},
+	"SectionCardsOraItoData": {
+		"id": "section-oraito",
+		"modes": ["color-red"],
+		"title": "Дизайн-линия <span class='section-cards__title_colored'>Ora-ïto</span>",
+		"itemPreview": {
+			"photo": {
+				"url": "/src/assets/images/posters/ora-ito.jpg",
+				"url2x": "/src/assets/images/posters/ora-ito@2x.jpg",
+				"alt": "Коллекция созданная известным французским дизайнером Ora Ita",
+				"responsivePhoto": [
+					{
+						"url": "/src/assets/images/posters/ora-ito-mobile.jpg 1x, /src/assets/images/posters/ora-ito-mobile@2x.jpg 2x"
+					}
+				]
+			}
+		},
+		"products": [
+			{
+				"modes": ["article-color-red"],
+				"url": "https://www.dns-shop.ru/product/2a00bcd7dff53330/elektriceskaa-varocnaa-poverkhnost-gorenje-ect648orab/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/ECT648ORAB.png",
+					"url2x": "/src/assets/images/products/ECT648ORAB@2x.png",
+					"alt": "Электрическая варочная панель ECT648ORAB"
+				},
+				"caption": "Электрическая варочная панель",
+				"article": "ECT648ORAB"
+			},
+			{
+				"modes": ["article-color-red"],
+				"url": "https://www.dns-shop.ru/product/4f06a6b275413330/indukcionnaa-varocnaa-poverkhnost-gorenje-it646orab/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/IT646ORAB.png",
+					"url2x": "/src/assets/images/products/IT646ORAB@2x.png",
+					"alt": "Индукционная варочная панель"
+				},
+				"caption": "Индукционная варочная панель",
+				"article": "IT646ORAB"
+			},
+			{
+				"modes": ["article-color-red"],
+				"url": "https://www.dns-shop.ru/product/4f06a6b075413330/indukcionnaa-varocnaa-poverkhnost-gorenje-it646oraw/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/IT646ORAW.png",
+					"url2x": "/src/assets/images/products/IT646ORAW@2x.png",
+					"alt": "Индукционная варочная панель "
+				},
+				"caption": "Индукционная варочная панель",
+				"article": "IT646ORAW"
+			},
+			{
+				"modes": ["article-color-red"],
+				"url": "https://www.dns-shop.ru/product/9dc27a3bf62d2ff4/elektriceskij-dukhovoj-skaf-gorenje-bsa6737orab-cernyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BSA6737ORAB.png",
+					"url2x": "/src/assets/images/products/BSA6737ORAB@2x.png",
+					"alt": "Независимая духовка BSA6737ORAB"
+				},
+				"caption": "Независимая духовка",
+				"article": "BSA6737ORAB"
+			},
+			{
+				"modes": ["article-color-red"],
+				"url": "https://www.dns-shop.ru/product/9dc27a3df62d2ff4/elektriceskij-dukhovoj-skaf-gorenje-bsa6737oraw-belyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BSA6737ORAW.png",
+					"url2x": "/src/assets/images/products/BSA6737ORAW@2x.png",
+					"alt": "Независимая духовка BSA6737ORAW"
+				},
+				"caption": "Независимая духовка",
+				"article": "BSA6737ORAW"
+			},
+			{
+				"modes": ["article-color-red"],
+				"url": "https://www.dns-shop.ru/product/ecfe5ce382313330/vstraivaemaa-mikrovolnovaa-pec-gorenje-bm235orab-cernyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BM235ORAB.png",
+					"url2x": "/src/assets/images/products/BM235ORAB@2x.png",
+					"alt": "Встраиваемая микроволновая печь BM235ORAB"
+				},
+				"caption": "Встраиваемая микроволновая печь",
+				"article": "BM235ORAB"
+			},
+			{
+				"modes": ["article-color-red"],
+				"url": "https://www.dns-shop.ru/product/e49a263c82313330/vstraivaemaa-mikrovolnovaa-pec-gorenje-bm235oraw-belyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BM235ORAW.png",
+					"url2x": "/src/assets/images/products/BM235ORAW@2x.png",
+					"alt": "Встраиваемая микроволновая печь  BM235ORAW"
+				},
+				"caption": "Встраиваемая микроволновая печь",
+				"article": "BM235ORAW"
+			},
+			{
+				"modes": ["article-color-red"],
+				"url": "https://www.dns-shop.ru/product/fab1a02382303330/vytazka-teleskopiceskaa-gorenje-bhp643orab-cernyjserebristyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BHP643ORAB.png",
+					"url2x": "/src/assets/images/products/BHP643ORAB@2x.png",
+					"alt": "Встраиваемая вытяжка BHP643ORAB"
+				},
+				"caption": "Встраиваемая вытяжка",
+				"article": "BHP643ORAB"
+			},
+			{
+				"modes": ["article-color-red"],
+				"url": "https://www.dns-shop.ru/product/fab1a02382303330/vytazka-teleskopiceskaa-gorenje-bhp643orab-cernyjserebristyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BHP643ORAW.png",
+					"url2x": "/src/assets/images/products/BHP643ORAW@2x.png",
+					"alt": "Встраиваемая вытяжка BHP643ORAW "
+				},
+				"caption": "Встраиваемая вытяжка",
+				"article": "BHP643ORAW"
+			}
+		],
+		"cards": [
+			{
+				"modes": ["vertical"],
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/ora-ito-you-can-cook.jpg",
+					"url2x": "/src/assets/images/video-preview/ora-ito-you-can-cook@2x.jpg"
+				},
+				"caption": "Готовить блюда на открытом огне можно так же легко, как иллюзионист, что взмахом руки творит чудеса.  ",
+				"text": "Все возможно с новой коллекцией кухонной техники, созданной известным французским дизайнером Ора-Ито. Она проста, интуитивно понятна, содержит все передовые технологии. Узнайте все её секреты",
+				"popup": {
+					"content": {
+						"video-youtube": "u9McjRo02kk"
+					}
+				}
+			},
+			{
+				"modes": ["caption-color-red", "large"],
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/ora-ito-steam-assist.jpg",
+					"url2x": "/src/assets/images/video-preview/ora-ito-steam-assist@2x.jpg"
+				},
+				"partIconBox": {
+					"elementModes": ["preview"],
+					"position": "preview",
+					"modes": ["large", "brown"],
+					"icon": {
+						"url": "/src/assets/images/common/bridgezone.svg",
+						"alt": "Иконка 'Bridgezone'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "AreaFlex: Зона объединения конфорок",
+				"text": "Волшебное превращение двух отдельных конфорок в одну всего одним простым прикосновением. Приготовление блюд в большой посуде ещё никогда не было таким простым и эффектным.",
+				"popup": {
+					"content": {
+						"video-youtube": "zRgSEgy0iZw"
+					}
+				}
+			},
+			{
+				"modes": ["caption-color-red", "large"],
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/ora-ito-area-flex.jpg",
+					"url2x": "/src/assets/images/video-preview/ora-ito-area-flex@2x.jpg"
+				},
+				"partIconBox": {
+					"elementModes": ["preview"],
+					"position": "preview",
+					"modes": ["large", "brown"],
+					"icon": {
+						"url": "/src/assets/images/common/extra-steam.svg",
+						"alt": "Иконка 'Экстра-пар'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "SteamAssist. Идеальные блюда на пару с хрустящей корочкой",
+				"text": "При выборе программы с паром духовка сообщит вам, когда пришло время подать пар. В зависимости от модели нажмите на сенсор функции на дисплее, чтобы включить подачу пара. Вода начнёт поступать в испрарительную ёмкость внутри духовки, и пар начнёт подаваться в камеру",
+				"popup": {
+					"content": {
+						"video-youtube": "GzaWVA8_yEE"
+					}
+				}
+			}
+		]
+	},
+	"SectionCardsSimplicityData": {
+		"id": "section-simplicity",
+		"title": "Дизайн-линия <span class='section-cards__title_colored'>Simplicity</span>",
+		"itemPreview": {
+			"photo": {
+				"url": "/src/assets/images/posters/simplecity.jpg",
+				"url2x": "/src/assets/images/posters/simplecity@2x.jpg",
+				"alt": "Стильный минималистичный дизайн",
+				"responsivePhoto": [
+					{
+						"url": "/src/assets/images/posters/simplecity-mobile.jpg 1x, /src/assets/images/posters/simplecity-mobile@2x.jpg 2x"
+					}
+				]
+			}
+		},
+		"products": [
+			{
+				"url": "https://www.dns-shop.ru/product/69b11663be014b0b/indukcionnaa-varocnaa-poverkhnost-gorenje-gi6421syw/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/GI6421SYW.png",
+					"url2x": "/src/assets/images/products/GI6421SYW@2x.png",
+					"alt": "Индукционная варочная панель GI6421SYW"
+				},
+				"caption": "Индукционная варочная панель",
+				"article": "GI6421SYW"
+			},
+			{
+				"url": "https://www.dns-shop.ru/product/f73197346ee2ffc0/indukcionnaa-varocnaa-poverkhnost-gorenje-gi6421syb/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/GI6421SYB.png",
+					"url2x": "/src/assets/images/products/GI6421SYB@2x.png",
+					"alt": "Индукционная варочная панель GI6421SYB"
+				},
+				"caption": "Индукционная варочная панель",
+				"article": "GI6421SYB"
+			},
+			{
+				"url": "https://www.dns-shop.ru/product/f0dbaf00d59b3f59/vstraivaemaa-mikrovolnovaa-pec-gorenje-bm235g1syb-cernyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BM235G1SYB.png",
+					"url2x": "/src/assets/images/products/BM235G1SYB@2x.png",
+					"alt": "Встраиваемая микроволновая печь BM235G1SYB"
+				},
+				"caption": "Встраиваемая микроволновая печь",
+				"article": "BM235G1SYB"
+			},
+			{
+				"url": "https://www.dns-shop.ru/product/47df08c2e2b379e7/vstraivaemaa-mikrovolnovaa-pec-gorenje-bm235g1syw-belyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BM235G1SYW.png",
+					"url2x": "/src/assets/images/products/BM235G1SYW@2x.png",
+					"alt": "Встраиваемая микроволновая печь BM235G1SYW"
+				},
+				"caption": "Встраиваемая микроволновая печь",
+				"article": "BM235G1SYW"
+			},
+			{
+				"url": "https://www.dns-shop.ru/product/fbbd5d0d0e31ed20/elektriceskij-dukhovoj-skaf-gorenje-bos67371syw-belyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BOS67371SYW.png",
+					"url2x": "/src/assets/images/products/BOS67371SYW@2x.png",
+					"alt": "Независимая духовка BOS67371SYW"
+				},
+				"caption": "Независимая духовка",
+				"article": "BOS67371SYW"
+			},
+			{
+				"url": "https://www.dns-shop.ru/product/3c7114e60e31ed20/elektriceskij-dukhovoj-skaf-gorenje-bos67371syb-cernyj/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/BOS67371SYB.png",
+					"url2x": "/src/assets/images/products/BOS67371SYB@2x.png",
+					"alt": "Независимая духовка BOS67371SYB"
+				},
+				"caption": "Независимая духовка",
+				"article": "BOS67371SYB"
+			},
+			{
+				"url": "https://www.dns-shop.ru/product/2f4c34dd294f3333/gazovaa-varocnaa-poverkhnost-gorenje-gt642syb/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/GT642SYB.png",
+					"url2x": "/src/assets/images/products/GT642SYB@2x.png",
+					"alt": "Газовая варочная панель GT642SYB"
+				},
+				"caption": "Газовая варочная панель",
+				"article": "GT642SYB"
+			},
+			{
+				"url": "https://www.dns-shop.ru/product/2f4c34ed294f3333/gazovaa-varocnaa-poverkhnost-gorenje-gt642syw/",
+				"modulePhoto": {
+					"url": "/src/assets/images/products/GT642SYW.png",
+					"url2x": "/src/assets/images/products/GT642SYW@2x.png",
+					"alt": "Газовая варочная панель GT642SYW"
+				},
+				"caption": "Газовая варочная панель",
+				"article": "GT642SYW"
+			}
+		],
+		"cards": [
+			{
+				"modes": ["vertical"],
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/simplicity-stylish-minimalistic-design.jpg",
+					"url2x": "/src/assets/images/video-preview/simplicity-stylish-minimalistic-design@2x.jpg"
+				},
+				"caption": "Стильный минималистичный дизайн ",
+				"text": "Бытовая техника Gorenje Simplicity имеет стильный минималистичный дизайн, интуитивное управление и привлекательное соотношение цены и качества. <br/>· <strong>Адаптивная технология</strong> запоминает привычки пользователя <br/>· <strong>Автоматические программы</strong> гарантируют отличные результаты каждый раз <br/>· <strong>Интуитивно понятное управление в один</strong> шаг обеспечивает простое использование как опытным пользователям, так и новичкам <br/>· Доступно в классическом чёрном или белом цветах, которые никогда не потеряют актуальности",
+				"popup": {
+					"content": {
+						"video-youtube": "NLvEOgHFnpk"
+					}
+				}
+			},
+			{
+				"modes": ["caption-color-green", "large"],
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/simplicity-adap-tech.jpg",
+					"url2x": "/src/assets/images/video-preview/simplicity-adap-tech@2x.jpg"
+				},
+				"partIconBox": {
+					"elementModes": ["preview"],
+					"position": "preview",
+					"modes": ["large"],
+					"icon": {
+						"url": "/src/assets/images/common/adapttech.svg",
+						"alt": "Иконка 'Adapttech'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Адаптивная технология AdapTech ",
+				"text": "Эта интеллектуальная система поддерживает оптимальную температуру в холодильнике независимо от того, как часто вы его открываете. Система постоянно отслеживает использование холодильника и регулирует температуру, чтобы предотвратить любое ее повышение и сохранить свежесть продуктов.",
+				"popup": {
+					"content": {
+						"video-youtube": "vd97_WX4PXE"
+					}
+				}
+			},
+			{
+				"modes": ["caption-color-green", "large"],
+				"modulePhoto": {
+					"url": "/src/assets/images/video-preview/simplicity-extra-steam.jpg",
+					"url2x": "/src/assets/images/video-preview/simplicity-extra-steam@2x.jpg"
+				},
+				"partIconBox": {
+					"elementModes": ["preview"],
+					"position": "preview",
+					"modes": ["large"],
+					"icon": {
+						"url": "/src/assets/images/common/extra-steam.svg",
+						"alt": "Иконка 'Экстра-пар'",
+						"isObjectFitCover": false
+					}
+				},
+				"caption": "Функция ExtraSteam",
+				"text": "Программа ExtraSteam с использованием пара создает идеальные условия для увеличения объема хлеба, формирования пышного мякиша и хрустящей корочки. Просто налейте немного воды в мелкий противень и выберите программу, а об остальном позаботится духовка.",
+				"popup": {
+					"content": {
+						"video-youtube": "b8T9vgdELGQ"
+					}
+				}
+			}
+		]
+	},
+	"SectionPageNavigationData": {
+		"logo": {
+			"url": "/src/assets/images/common/logo-column.svg",
+			"alt": "Текстовый логотип 'gorenje Делает жизнь лучше'",
+			"isObjectFitCover": false
+		}
+	},
+	"PartFooterData": {
+		"text": "ПРОДАВЕЦ – ООО «ДНС РИТЕЙЛ». ЮР. АДРЕС: 690068, РОССИЙСКАЯ ФЕДЕРАЦИЯ, ПРИМОРСКИЙ КРАЙ, ГОРОД ВЛАДИВОСТОК, ПРОСПЕКТ 100-ЛЕТИЯ ВЛАДИВОСТОКА, ДОМ 155, КОРПУС 3, ОФИС 5. ИНН 2540167061. ОГРН 1102540008230. ПРЕДЛОЖЕНИЯ ДЕЙСТВУЮТ ВО ВСЕХ МАГАЗИНАХ КОМПАНИИ DNS И НА САЙТЕ <a href=\"https://www.dns-shop.ru\">WWW.DNS-SHOP.RU</a>. КОЛИЧЕСТВО ТОВАРОВ ОГРАНИЧЕНО. ПОДРОБНОСТИ УТОЧНЯЙТЕ У ПРОДАВЦОВ-КОНСУЛЬТАНТОВ И НА САЙТЕ <a href=\"https://www.dns-shop.ru\">WWW.DNS-SHOP.RU</a>"
+	}
+}

@@ -1,0 +1,20 @@
+.item-preview {
+	position: relative;
+
+	&::before {
+		display: block;
+		padding-top: get-percent-part(470, 1228);
+		content: '';
+
+		@include large-mobile {
+			padding-top: get-percent-part(470, 300);
+		}
+	}
+
+	&__module-photo {
+		img {
+			border: 1px solid rgb(76 92 101 / 10%);
+			border-radius: 2rem;
+		}
+	}
+}

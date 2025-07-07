@@ -1,0 +1,6 @@
+mixin item-preview(props = {})
+	-
+		const { url, photo } = props;
+
+	+e({tag: url ? 'a' : 'div'}).item-preview.item-preview__(href=url)
+		+module-photo(photo)

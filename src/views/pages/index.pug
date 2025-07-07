@@ -1,0 +1,29 @@
+extends ../layouts/default.pug
+
+block append head-start
+
+block append styles
+
+block append head-end
+
+block append body-start
+
+block append header
+
+block content
+	+section-page-navigation(SectionPageNavigationData)
+	+section-hero(SectionHeroData).js-section-hero
+	+section-category(SectionCategoryCookingData).js-page-navigation-section
+	+section-category(SectionCategoryWashingDishesData).js-page-navigation-section
+	+section-category(SectionCategoryFreezingData).js-page-navigation-section
+	+section-category(SectionCategoryClothesData).js-page-navigation-section
+	+section-cards(SectionCardsOraItoData).js-page-navigation-section
+	+section-cards(SectionCardsSimplicityData).js-page-navigation-section
+
+block append footer
+
+block append popups
+
+block append scripts
+
+block append body-end

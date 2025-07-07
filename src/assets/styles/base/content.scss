@@ -1,0 +1,70 @@
+.h1,
+.content h1 {
+	@include font-size-xl;
+
+	@include large-mobile {
+		@include font-size-lg;
+	}
+}
+
+.h2,
+.content h2 {
+	@include font-size-lg;
+
+	@include large-mobile {
+		@include font-size-md;
+	}
+}
+
+.h3,
+.content h3 {
+	@include font-size-sm-bold;
+}
+
+.h4,
+.content h4 {
+	@include font-size-xs;
+}
+
+.h5,
+.content h5 {
+	@include font-size-xss;
+}
+
+@include headings {
+}
+
+.content b,
+.b,
+b {
+	font-weight: 500;
+}
+
+.content strong,
+.strong,
+strong {
+	font-weight: 700;
+}
+
+em,
+i,
+.em,
+.i {
+	font-style: italic;
+}
+
+.color-grey {
+	color: $color-grey;
+}
+
+.color-green {
+	color: $color-green;
+}
+
+.color-pink {
+	color: $color-pink;
+}
+
+.color-white {
+	color: $color-white;
+}

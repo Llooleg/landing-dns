@@ -1,0 +1,53 @@
+.part-header {
+	flex: 0 0 auto;
+	padding: 3rem 0;
+	background-color: #fff;
+
+	@include large-tablet {
+		padding: 2.1rem 0;
+	}
+
+	@include large-mobile {
+		padding: 1.2rem 0;
+	}
+
+	&__logo-list {
+		display: flex;
+		flex-flow: row nowrap;
+		gap: 1.9rem;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		display: block;
+	}
+
+	&__module-photo {
+		max-width: 100%;
+
+		&_main {
+			width: 40rem;
+
+			@include large-tablet {
+				width: 26.5rem;
+			}
+
+			@include large-mobile {
+				width: 13rem;
+			}
+		}
+
+		&_dns {
+			width: 36.2rem;
+
+			@include large-tablet {
+				width: 25.5rem;
+			}
+
+			@include large-mobile {
+				width: 14.7rem;
+			}
+		}
+	}
+}

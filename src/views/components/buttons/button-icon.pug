@@ -1,0 +1,27 @@
+mixin button-icon(props = {})
+	-
+		const { tag, url, elementModes, modes, icon, jsClass, responsiveClass, download, target, popup } = props;
+
+		const buttonIconFilteredClasses = [
+			elementModes && `_${elementModes.join(' _')}`,
+			'button-icon__',
+			modes && `_${modes.join(' _')}`,
+			responsiveClass,
+			popup && popup.id && 'js-popup-trigger',
+			jsClass,
+		].filter((el) => el).join(' ');
+		const buttonIconIconFilteredClasses = [
+			icon && `_${icon.name}`,
+			'pointer-events-none',
+		].filter((el) => el).join(' ');
+
+	+e({tag: url ? 'a' : tag || 'button'}).button-icon(
+		href=url
+		class=buttonIconFilteredClasses
+		download=download
+		target=target
+		data-popup-id=popup && popup.id
+	)&attributes(attributes)
+		if icon
+			+e.SPAN.icon(class=buttonIconIconFilteredClasses)
+				+svg-icon(icon)

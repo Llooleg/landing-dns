@@ -1,0 +1,95 @@
+@mixin hd($offset: 0) {
+	@media only screen and (max-width: #{$hd-resolution + $offset}px) {
+		@content;
+	}
+}
+
+@mixin macbook($offset: 0) {
+	@media only screen and (max-width: #{$macbook-resolution + $offset}px) {
+		@content;
+	}
+}
+
+@mixin large-desktop($offset: 0) {
+	@media only screen and (max-width: #{$large-desktop-resolution + $offset}px) {
+		@content;
+	}
+}
+
+@mixin small-desktop($offset: 0) {
+	@media only screen and (max-width: #{$small-desktop-resolution + $offset}px) {
+		@content;
+	}
+}
+
+@mixin large-tablet($offset: 0) {
+	@media only screen and (max-width: #{$large-tablet-resolution + $offset}px) {
+		@content;
+	}
+}
+
+@mixin small-tablet($offset: 0) {
+	@media only screen and (max-width: #{$small-tablet-resolution + $offset}px) {
+		@content;
+	}
+}
+
+@mixin large-mobile($offset: 0) {
+	@media only screen and (max-width: #{$large-mobile-resolution + $offset}px) {
+		@content;
+	}
+}
+
+@mixin small-mobile($offset: 0) {
+	@media only screen and (max-width: #{$small-mobile-resolution + $offset}px) {
+		@content;
+	}
+}
+
+@mixin min-hd($offset: 0) {
+	@media only screen and (min-width: #{$hd-resolution + 1 + $offset}px) {
+		@content;
+	}
+}
+
+@mixin min-macbook($offset: 0) {
+	@media only screen and (min-width: #{$macbook-resolution + 1 + $offset}px) {
+		@content;
+	}
+}
+
+@mixin min-large-desktop($offset: 0) {
+	@media only screen and (min-width: #{$large-desktop-resolution + 1 + $offset}px) {
+		@content;
+	}
+}
+
+@mixin min-small-desktop($offset: 0) {
+	@media only screen and (min-width: #{$small-desktop-resolution + 1 + $offset}px) {
+		@content;
+	}
+}
+
+@mixin min-large-tablet($offset: 0) {
+	@media only screen and (min-width: #{$large-tablet-resolution + 1 + $offset}px) {
+		@content;
+	}
+}
+
+@mixin min-small-tablet($offset: 0) {
+	@media only screen and (min-width: #{$small-tablet-resolution + 1 + $offset}px) {
+		@content;
+	}
+}
+
+@mixin min-large-mobile($offset: 0) {
+	@media only screen and (min-width: #{$large-mobile-resolution + 1 + $offset}px) {
+		@content;
+	}
+}
+
+@mixin min-small-mobile($offset: 0) {
+	@media only screen and (min-width: #{$small-mobile-resolution + 1 + $offset}px) {
+		@content;
+	}
+}

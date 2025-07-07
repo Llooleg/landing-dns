@@ -1,0 +1,43 @@
+-
+	const sectionCardsData = {
+		slider: {
+			settings: {
+				perPage: 5,
+				gap: '1rem',
+				arrows: true,
+				breakpoints: {
+					1120: {
+						perPage: 1,
+						perMove: 1,
+						autoWidth: true,
+					},
+				},
+			},
+			pagination: {},
+			navigation: {}
+		},
+	};
+
+mixin section-cards(props = {})
+	-
+		const { slider } = sectionCardsData;
+		const { modes, id, title, itemPreview, sliderId, products, cards } = props;
+		const filteredClasses = [
+			modes && modes.length && `_${modes.join(' _')}`,
+		].filter((el) => el).join(' ')
+
+	+section-core.section-cards__(class=filteredClasses id=id)&attributes(attributes)
+		if title
+			+e.H2.title.h1
+				| !{ title }
+		+item-preview(itemPreview)
+		if products && products.length
+			+slider({...slider, id: sliderId})
+				each itemCard in products
+					+slider-slide.section-cards__slide
+						+item-card(itemCard)
+		if cards && cards.length
+			+e.UL.cards
+				each itemPreviewVideo in cards
+					+e.LI.cards-item
+						+item-preview-video(itemPreviewVideo)

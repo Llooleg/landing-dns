@@ -1,0 +1,23 @@
+mixin item-card(props = {})
+	-
+		const { jsClass = false, elementClass = true, modes, url = '#', modulePhoto, caption, article } = props;
+		const formattedModulePhoto = jsClass ? {...modulePhoto, jsClassImage: 'js-template-item-card-photo'} : modulePhoto;
+		const formattedClasses = [
+			elementClass && 'item-card',
+			'item-card__',
+			modes && modes.length && `_${modes.join(' _')}`,
+			jsClass && 'js-template-item-card-link'
+		].filter((el) => el).join(' ');
+
+	+e.A(
+		href=url
+		class=formattedClasses
+		target='_blank'
+	)
+		+e.ARTICLE.wrapper
+			+module-photo(formattedModulePhoto)
+			+e.content
+				+e.H4.caption(class=`${jsClass ? 'js-template-item-card-caption' : ''}`)
+					| #{ caption }
+				+e.P.article(class=`${jsClass ? 'js-template-item-card-article' : ''}`)
+					| #{ article }

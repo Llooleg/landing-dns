@@ -1,0 +1,23 @@
+-
+	const sectionHeroData = {
+		title: 'Приветственная секция с навигацией и постерами',
+	};
+
+mixin section-hero(props = {})
+	-
+		const { title } = sectionHeroData;
+		const { slider, list } = props;
+
+	+section-core.section-hero__&attributes(attributes)
+		h2.visually-hidden
+			| #{ title }
+		if CommonNavigationData && CommonNavigationData.list && CommonNavigationData.list.length
+			+e.UL.navigation-list
+				each itemNavigation in CommonNavigationData.list
+					+e.LI.navigation-list-item
+						+item-navigation(itemNavigation).js-page-navigation-item
+		if slider && list && list.length
+			+slider(slider)
+				each itemPreview in list
+					+slider-slide.section-hero__slide
+						+item-preview(itemPreview)

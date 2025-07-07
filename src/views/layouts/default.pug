@@ -1,0 +1,76 @@
+include ../components/components-loader.pug
+
+doctype html
+html(
+	class=CommonSettings.html.modes
+	lang='en'
+	dir='ltr'
+)&attributes(CommonSettings.html.attrs)
+	head
+		block head-start
+
+		meta(charset='utf-8')
+
+		meta(
+			name='viewport'
+			content='width=device-width, initial-scale=1, viewport-fit=cover'
+		)
+
+		meta(
+			http-equiv='X-UA-Compatible'
+			content='IE=edge'
+		)
+
+		meta(
+			name='format-detection'
+			content='telephone=no'
+		)
+
+		title
+			| #{ CommonSettings.title || `Page ${CommonSettings.pageName || ''}`.trim() }
+
+		include meta
+
+		include favicon
+
+		block styles
+			link(
+				href='/src/assets/styles/font.scss'
+				rel='stylesheet'
+			)
+
+			link(
+				href='/src/assets/styles/vendor.scss'
+				rel='stylesheet'
+			)
+
+			link(
+				href='/src/assets/styles/app.scss'
+				rel='stylesheet'
+			)
+
+		block head-end
+
+	body#body(class=CommonSettings.body.modes)&attributes(CommonSettings.body.attrs)
+		block body-start
+
+		block header
+			+part-header(PartHeaderData)
+
+		+part-main-content(class=CommonSettings.main.modes)&attributes(CommonSettings.main.attrs)
+			block content
+
+		block footer
+			+part-footer(PartFooterData)
+
+		include popups
+
+		include templates
+
+		block scripts
+			script(
+				src='/src/assets/scripts/app.js'
+				type='module'
+			)
+
+		block body-end

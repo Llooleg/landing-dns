@@ -1,0 +1,13 @@
+mixin slider-navigation(props = {})
+	-
+		const { id, button, responsiveClass, modes } = props;
+
+		const sliderNavigationFilteredClasses = [
+			modes && `_${modes.join(' _')}`,
+			'splide__arrows',
+			responsiveClass && responsiveClass,
+		].filter((el) => el).join(' ');
+
+	+e.slider-navigation.slider-navigation__(class=sliderNavigationFilteredClasses)&attributes(attributes)
+		+slider-button({...props.button, isPrevButton: true})
+		+slider-button({...props.button, isNextButton: true})

@@ -1,0 +1,25 @@
+-
+	const itemCategory = {
+		button: {
+			text: 'Модельный ряд',
+		},
+	};
+
+mixin item-category(props = {})
+	-
+		const { button } = itemCategory;
+		const { caption, categoryId, modulePhoto } = props;
+		const formattedCaption = caption.replaceAll('<br/>', '');
+
+	+e.BUTTON.item-category.item-category__.js-popup-trigger(
+		data-popup-id='popup-products'
+		data-popup-content=['product', formattedCaption]
+	)
+		+e.SPAN.cell._left
+			if caption
+				+e.SPAN.caption
+					| !{ caption }
+			+e.SPAN.button.h5
+				| #{ button.text }
+		+e.SPAN.cell._right
+			+module-photo({...modulePhoto, alt: formattedCaption})

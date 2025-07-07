@@ -1,0 +1,15 @@
+mixin button-burger(props = {})
+	-
+		const { elementModes, responsiveClass, isActive, jsClass, popup } = props;
+
+		const buttonBurgerFilteredClasses = [
+			elementModes && `_${elementModes.join(' _')}`,
+			'button-burger__',
+			responsiveClass,
+			popup && popup.id && 'js-popup-trigger',
+			jsClass,
+			isActive && 'is-active',
+		].filter((el) => el).join(' ');
+
+	+e.BUTTON.button-burger(class=buttonBurgerFilteredClasses data-popup-id=popup && popup.id)&attributes(attributes)
+		+e.SPAN.icon.pointer-events-none

@@ -1,0 +1,22 @@
+mixin section-core(props = {})
+	-
+		const { isSectionClass = true, modes, jsClass, wrapperModes, wrapperJsClass, tag, id, isCustomWrapper = false } = props;
+
+		const sectionCoreFilteredClasses = [
+			isSectionClass && 'section-core',
+			modes && `_${modes.join(' _')}`,
+			jsClass,
+		].filter((el) => el).join(' ');
+
+		const wrapperFilteredClasses = [
+			wrapperModes && `_${wrapperModes.join(' _')}`,
+			wrapperJsClass,
+		].filter((el) => el).join(' ');
+
+	+b({tag: tag || 'section'})(id=id class=sectionCoreFilteredClasses)&attributes(attributes)
+		if block
+			if isCustomWrapper
+				block
+			else
+				+e.wrapper.wrapper(class=wrapperFilteredClasses)
+					block

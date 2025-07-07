@@ -1,0 +1,28 @@
+-
+	const sliderButtonData = {
+		defaultIcon: {
+			name: 'icon-arrow-slider',
+			viewBox: '0 0 14 25',
+		},
+	};
+
+mixin slider-button(props = {})
+	-
+		const { defaultIcon } = sliderButtonData;
+		const { elementModes, modes, icon, isPrevButton, isNextButton, sliderId } = props;
+
+		const buttonFilteredClasses = [
+			elementModes && `_${elementModes.join(' _')}`,
+			'slider-button__',
+			modes && `_${modes.join(' _')}`,
+			isPrevButton && '_prev',
+			isNextButton && '_next',
+			'splide__arrow',
+			isPrevButton && 'splide__arrow--prev',
+			isNextButton && 'splide__arrow--next',
+			jsClass,
+			sliderId && (isPrevButton || isNextButton) && `js-slider-${sliderId}-${isPrevButton ? 'prev' : 'next'}`
+		].filter((el) => el).join(' ');
+
+	+e.BUTTON.slider-button(class=buttonFilteredClasses)&attributes(attributes)
+		+svg-icon(icon || defaultIcon)

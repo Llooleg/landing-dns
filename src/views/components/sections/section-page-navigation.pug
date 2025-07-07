@@ -1,0 +1,27 @@
+-
+	const sectionPageNavigationData = {
+		section: {
+			isSectionClass: false,
+			wrapperJsClass: 'js-section-page-navigation-wrapper',
+		},
+		title: 'Секция навигации на странице'
+	};
+
+mixin section-page-navigation(props = {})
+	-
+		const { section, title } = sectionPageNavigationData;
+		const { logo, list } = props;
+
+	+section-core(section).section-page-navigation__.js-section-page-navigation
+		h2.visually-hidden
+			| #{ title }
+		+e.A.logo(href='#body')
+			+module-photo(logo)
+		if CommonNavigationData && CommonNavigationData.list && CommonNavigationData.list.length
+			+e.UL.navigation-list
+				each itemNavigation in CommonNavigationData.list
+					+e.LI.navigation-list-item
+						-
+							const modes = itemNavigation.modes ? [...itemNavigation.modes, 'small'] : ['small'];
+							const formattedItemNavigationData = itemNavigation && itemNavigation.partIconBox ? { ...itemNavigation, modes: modes, partIconBox: { ...itemNavigation.partIconBox, modes: ['small'] } } : {...itemNavigation, modes: modes};
+						+item-navigation(formattedItemNavigationData).js-page-navigation-item

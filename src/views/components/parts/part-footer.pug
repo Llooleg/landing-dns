@@ -1,0 +1,17 @@
+-
+	const partFooterData = {
+		section: {
+			tag: 'footer',
+			id: 'part-footer',
+			isSectionClass: false,
+		},
+	};
+
+mixin part-footer(props = {})
+	-
+		const { section } = partFooterData;
+		const { text } = props;
+
+	+section-core(section).part-footer__.js-part-footer&attributes(attributes)
+		+e.text
+			| !{ text }

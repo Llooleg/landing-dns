@@ -1,0 +1,38 @@
+.part-icon-box {
+	width: 4rem;
+	height: 4rem;
+	padding: 0.5rem;
+	background-color: $color-green;
+	border-radius: 0.4rem;
+
+	@include flex-center;
+
+	&_small {
+		@include min-large-tablet {
+			width: 4.4rem;
+			height: 4.4rem;
+		}
+	}
+
+	&_medium {
+		@include min-large-mobile {
+			width: 5rem;
+			height: 5rem;
+		}
+
+		@include min-large-tablet {
+			width: 6rem;
+			height: 6rem;
+		}
+	}
+
+	&_large {
+		width: 8rem;
+		height: 8rem;
+		border-radius: 1rem;
+	}
+
+	&_brown {
+		background-color: #3c2121;
+	}
+}

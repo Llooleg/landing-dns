@@ -1,0 +1,23 @@
+-
+	const partHeaderData = {
+		section: {
+			tag: 'header',
+			id: 'part-header',
+			isSectionClass: false,
+		},
+	};
+
+mixin part-header(props = {})
+	-
+		const { section } = partHeaderData;
+		const { logoList } = props;
+
+	+section-core(section).part-header__.js-part-header&attributes(attributes)
+		+e.UL.logo-list
+			each logoItem in logoList
+				+e.LI.logo-list-item
+					+e.A.logo(
+						href=logoItem.linkUrl
+						target=logoItem.target
+					)
+						+module-photo(logoItem)

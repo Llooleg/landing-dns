@@ -1,0 +1,31 @@
+mixin slider(props = {})
+	-
+		const { id, modes, jsClass = 'js-slider', responsiveClass, responsive, settings, navigation, pagination } = props;
+
+		const sliderFilteredClasses = [
+			modes && `_${modes.join(' _')}`,
+			responsiveClass,
+		].filter((el) => el).join(' ');
+		const sliderBlockFilteredClasses = [
+			jsClass,
+		].filter((el) => el).join(' ');
+
+	+e.slider(class=sliderFilteredClasses)&attributes(attributes)
+		+e.slider-block.splide(
+			id=id
+			class=sliderBlockFilteredClasses
+			role='group'
+			aria-label='Splide Slider'
+			data-slider-settings=settings
+			data-slider-responsive=responsive
+		)
+			if block
+				.splide__track
+					ul.splide__list
+						block
+
+			if navigation
+				+slider-navigation(navigation)
+
+			if pagination
+				+slider-pagination(pagination)

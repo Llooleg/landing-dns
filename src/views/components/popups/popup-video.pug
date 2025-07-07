@@ -1,0 +1,24 @@
+-
+	const popupVideo = {
+		title: 'Модальное окно для просмотра видео',
+		buttonClose: {
+			icon: {
+				name: 'icon-close',
+				viewBox: '0 0 22 22'
+			},
+		},
+	};
+
+mixin popup-video(props = {})
+	-
+		const { title, buttonClose } = popupVideo;
+
+	+b#popup-video.SECTION.popup-video.js-popup.css-animation-popup-slide-up
+		h2.visually-hidden
+			| #{ title }
+		+e.overlay.overlay.js-popup-close
+		+e.wrapper.js-popup-wrapper
+			+e.BUTTON.button-close.js-popup-close
+				+svg-icon(buttonClose.icon)
+			+e.content
+				.js-popup-content-video-youtube

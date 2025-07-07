@@ -1,0 +1,13 @@
+.button-burger {
+	&.is-active {
+		.button-burger {
+			&__icon {
+				@include burger-to-cross;
+			}
+		}
+	}
+
+	&__icon {
+		@include burger(2.4rem, 2.4rem, 2.4rem, 2px, 3px, $color-grey);
+	}
+}

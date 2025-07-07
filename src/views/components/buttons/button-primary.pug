@@ -1,0 +1,31 @@
+mixin button-primary(props = {})
+	-
+		const { tag, url, elementModes, modes, icon, jsClass, responsiveClass, download, target, popup } = props;
+
+		const buttonPrimaryFilteredClasses = [
+			elementModes && `_${elementModes.join(' _')}`,
+			'button-primary__',
+			modes && `_${modes.join(' _')}`,
+			responsiveClass,
+			popup && popup.id && 'js-popup-trigger',
+			jsClass,
+		].filter((el) => el).join(' ');
+
+		const buttonPrimaryIconFilteredClasses = [
+			icon && `_${icon.name}`,
+			'pointer-events-none',
+		].filter((el) => el).join(' ');
+
+	+e({tag: url ? 'a' : tag || 'button'}).button-primary(
+		href=url
+		class=buttonPrimaryFilteredClasses
+		download=download
+		target=target
+		data-popup-id=popup && popup.id
+	)&attributes(attributes)
+		if icon
+			+e.SPAN.icon(class=buttonPrimaryIconFilteredClasses)
+				+svg-icon(icon)
+		if block
+			+e.SPAN.text.pointer-events-none
+				block

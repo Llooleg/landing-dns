@@ -1,0 +1,41 @@
+-
+	const itemPreviewVideo = {
+		buttonIcon: {
+			tag: 'span',
+			icon: {
+				name: 'icon-play',
+				viewBox: '0 0 32 37'
+			},
+		},
+	}
+
+mixin item-preview-video(props = {})
+	-
+		const { buttonIcon } = itemPreviewVideo;
+		const { modes, modulePhoto, partIconBox, caption, popup = {}, text } = props;
+		const formattedClasses = [
+			modes && `_${modes.join(' _')}`,
+			popup && 'js-popup-trigger'
+		].filter((el) => el).join(' ');
+
+	+e.BUTTON.item-preview-video.item-preview-video__(
+		class=formattedClasses
+		data-popup-id='popup-video'
+		data-popup-content=popup && popup.content
+	)
+		+e.SPAN.preview
+			if modulePhoto
+				+module-photo({...modulePhoto, alt: caption})
+			+button-icon(buttonIcon)
+			if partIconBox && partIconBox.position === 'preview'
+				+part-icon-box(partIconBox)
+		+e.SPAN.content
+			+e.SPAN.header
+				if partIconBox && partIconBox.position !== 'preview'
+					+part-icon-box(partIconBox)
+				if caption
+					+e.SPAN.caption
+						| #{ caption }
+			if text
+				+e.SPAN.text
+					| !{ text }

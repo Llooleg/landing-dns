@@ -1,0 +1,41 @@
+mixin module-photo(props = {})
+	-
+		const { elementClass, elementModes, blockClass, blockModes, url, url2x, alt = 'photo', imageClass, jsClassImage, webp, responsivePhoto, isObjectFitCover = true, isObjectFitContain = false  } = props;
+
+		const modulePhotoFilteredClasses = [
+			elementClass || 'module-photo',
+			elementModes && `_${elementModes.join(' _')}`,
+			blockClass || 'module-photo__',
+			blockModes && `_${blockModes.join(' _')}`,
+		].filter((el) => el).join(' ')
+
+		const modulePhotoImgFilteredClasses = [
+			isObjectFitCover && 'object-fit-cover',
+			isObjectFitContain && 'object-fit-contain',
+			imageClass,
+			jsClassImage,
+		].filter((el) => el).join(' ');
+
+		const defaultResponsive = {
+			resolution: 580,
+			mediaQuery: 'max',
+		};
+
+	+e.PICTURE(class=modulePhotoFilteredClasses)&attributes(attributes)
+		if responsivePhoto && responsivePhoto.length
+			each photo in responsivePhoto
+				-
+					const responsive = photo.responsive || defaultResponsive;
+				if photo.url
+					source(
+						srcset=photo.url
+						media=`(${responsive.mediaQuery}-width: ${responsive.resolution}px)`
+					)
+
+		if url
+			img(
+				src=url
+				srcset=url2x ? `${url} 1x, ${url2x} 2x` : false
+				alt=alt
+				class=modulePhotoImgFilteredClasses
+			)

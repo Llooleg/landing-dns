@@ -1,0 +1,6 @@
+mixin svg-icon(props = {})
+	-
+		const { name, viewBox } = props;
+
+	svg(class=`svg-icon svg-icon_${name}` viewBox=viewBox)&attributes(attributes)
+		use(href=`#${name}`)

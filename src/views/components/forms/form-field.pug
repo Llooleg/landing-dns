@@ -1,0 +1,36 @@
+-
+	const formFieldData = {
+		defaultErrorText: 'Введены некорректные данные',
+	};
+
+mixin form-field(props = {})
+	-
+		const { modes, isTextArea, label, type, inputmode, name, placeholder, required, errorText } = props;
+
+		const formFieldFilteredClasses = [
+			modes && `_${modes.join(' _')}`,
+			isTextArea && "_textarea",
+			'js-form-field',
+		].filter((el) => el).join(' ');
+
+	+e.LABEL.form-field.form-field__(class=formFieldFilteredClasses)&attributes(attributes)
+		if label
+			+e.label
+				| #{ label }
+		+e.content
+			+e({tag: isTextArea ? 'textarea' : 'input'}).input.js-form-field-input(
+				type=type
+				inputmode=inputmode
+				name=name
+				placeholder=placeholder
+				data-form-field-required=required
+			)
+			if icons && icons.length
+				+e.UL.icons
+					each icon in icons
+						+e.LI.icons-item
+							+e({tag: icon.tag || 'div'}).icon(class=`${icon.jsClass ? icon.jsClass : ''}`)
+								+svg-icon(icon)
+		if required
+			+e.error
+				| #{ errorText || errorDefaultText }

@@ -1,0 +1,17 @@
+{
+	"exclude": ["node_modules"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@root/*": ["./*"],
+			"@src/*": ["src/*"],
+			"@views/*": ["src/views/*"],
+			"@styles/*": ["src/assets/styles/*"],
+			"@scripts/*": ["src/assets/scripts/*"],
+			"@fonts/*": ["src/assets/fonts/*"],
+			"@images/*": ["src/assets/images/*"],
+			"@icons/*": ["src/assets/images/icons/*"],
+			"@videos/*": ["src/assets/videos/*"]
+		}
+	}
+}

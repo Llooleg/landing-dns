@@ -1,0 +1,19 @@
+-
+	const ItemCardData = {
+		jsClass: true,
+		modes: [],
+		modulePhoto: {
+			url: '/src/assets/images/products/BHP643ORAB.png',
+			url2x: '/src/assets/images/products/BHP643ORAB@2x.png',
+			alt: ''
+		},
+		caption: '',
+		article: '',
+	};
+
+section#templates(style='display: none')
+	h2.visually-hidden
+		| Секция с шаблонами
+	template.js-template-item-card
+		+item-card(ItemCardData)
+	block templates

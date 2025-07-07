@@ -1,0 +1,38 @@
+.slider-button {
+	width: var(--slider-button);
+	height: var(--slider-button);
+	pointer-events: all;
+	background-color: #fff;
+	border-radius: 50%;
+	fill: $color-grey;
+	transition-property: box-shadow, opacity;
+
+	@include default-transition-state;
+	@include flex-center;
+
+	&_prev {
+		transform: scale(-1, 1);
+	}
+
+	&.is-disabled,
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+
+	&:hover {
+		box-shadow: 0 0 12px rgb(0 0 0 / 16%);
+	}
+
+	svg {
+		width: 1.4rem;
+
+		@include large-tablet {
+			width: 1.2rem;
+		}
+
+		@include large-mobile {
+			width: 1rem;
+		}
+	}
+}

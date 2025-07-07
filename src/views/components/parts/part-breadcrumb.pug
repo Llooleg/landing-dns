@@ -1,0 +1,21 @@
+mixin part-breadcrumb(props = {})
+	-
+		const { modes, list, divider = '/' } = props;
+
+		const partBreadcrumbFilteredClasses = [
+			modes && `_${modes.join(' _')}`,
+		].filter((el) => el).join(' ');
+
+	+b.NAV.part-breadcrumb(class=partBreadcrumbFilteredClasses)&attributes(attributes)
+		if list && list.length
+			+e.UL.list
+				each link, index in list
+					+e.LI.list-item
+						+e({tag: index + 1 < list.length ? 'a' : 'div' }).link(href=index + 1 < list.length ? link.url : null)
+							| #{ link.text }
+						if index + 1 < list.length
+							+e.divider
+								if divider.name && divider.viewBox
+									+svg-icon(divider)
+								else
+									| #{ divider }

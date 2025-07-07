@@ -1,0 +1,21 @@
+mixin item-navigation(props = {})
+	-
+		const { modes, url, partIconBox, caption, title, logo  } = props;
+		const filteredClasses = [
+			modes && `_${modes.join(' _')}`
+		].filter((el) => el).join(' ');
+
+	+e({tag: url ? 'a' : 'div'}).item-navigation.item-navigation__(href=url class=filteredClasses)&attributes(attributes)
+		if partIconBox
+			+e.cell._left
+				+part-icon-box(partIconBox)
+		if caption || title || logo
+			+e.cell._right
+				if caption
+					+e.caption.h3
+						| #{ caption }
+				if title
+					+e.title
+						| #{ title }
+				if logo
+					+module-photo(logo)

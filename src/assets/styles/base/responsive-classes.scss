@@ -1,0 +1,95 @@
+.responsive-small-mobile {
+	@include small-mobile {
+		display: none !important;
+	}
+}
+
+.responsive-large-mobile {
+	@include large-mobile {
+		display: none !important;
+	}
+}
+
+.responsive-small-tablet {
+	@include small-tablet {
+		display: none !important;
+	}
+}
+
+.responsive-large-tablet {
+	@include large-tablet {
+		display: none !important;
+	}
+}
+
+.responsive-small-desktop {
+	@include small-desktop {
+		display: none !important;
+	}
+}
+
+.responsive-large-desktop {
+	@include large-desktop {
+		display: none !important;
+	}
+}
+
+.responsive-macbook {
+	@include macbook {
+		display: none !important;
+	}
+}
+
+.responsive-hd {
+	@include hd {
+		display: none !important;
+	}
+}
+
+.responsive-from-small-mobile {
+	@include min-small-mobile {
+		display: none !important;
+	}
+}
+
+.responsive-from-large-mobile {
+	@include min-large-mobile {
+		display: none !important;
+	}
+}
+
+.responsive-from-small-tablet {
+	@include min-small-tablet {
+		display: none !important;
+	}
+}
+
+.responsive-from-large-tablet {
+	@include min-large-tablet {
+		display: none !important;
+	}
+}
+
+.responsive-from-small-desktop {
+	@include min-small-desktop {
+		display: none !important;
+	}
+}
+
+.responsive-from-large-desktop {
+	@include large-desktop {
+		display: none !important;
+	}
+}
+
+.responsive-from-macbook {
+	@include min-macbook {
+		display: none !important;
+	}
+}
+
+.responsive-from-hd {
+	@include min-hd {
+		display: none !important;
+	}
+}

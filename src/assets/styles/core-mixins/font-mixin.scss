@@ -1,0 +1,38 @@
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg, $locals: null) {
+	$src: null;
+	$extmods: (
+		eot: '?',
+		svg: '#' + str-replace($name, ' ', '_'),
+	);
+	$formats: (
+		otf: 'opentype',
+		ttf: 'truetype',
+	);
+
+	@if $locals {
+		@each $local in $locals {
+			$src: list.append($src, local('#{$local}'));
+		}
+	}
+
+	@each $ext in $exts {
+		$extmod: if(map.has-key($extmods, $ext), $ext + map.get($extmods, $ext), $ext);
+		$format: if(map.has-key($formats, $ext), map.get($formats, $ext), $ext);
+		$src: list.append($src, url('#{string.quote($path)}.#{string.quote($extmod)}') format(string.quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: string.quote($name);
+
+		@if $style {
+			font-style: $style;
+		}
+
+		@if $weight {
+			font-weight: $weight;
+		}
+
+		src: $src;
+		font-display: swap;
+	}
+}

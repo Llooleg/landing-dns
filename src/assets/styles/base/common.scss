@@ -1,0 +1,93 @@
+html {
+	font-size: var(--main-font-size);
+}
+
+body {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+	overflow-x: hidden;
+	font-family: HelveticaNeueCyr, sans-serif;
+	font-style: normal;
+	color: $color-grey;
+	background-color: #f6f6f6;
+
+	@include font-size-md;
+
+	@include large-mobile {
+		@include font-size-sm-bold;
+	}
+
+	@supports (min-height: 100dvh) {
+		min-height: 100dvh;
+	}
+}
+
+.wrapper {
+	@include wrapper-layout;
+}
+
+.svg-icon {
+	width: 100%;
+}
+
+.object-fit {
+	&-cover {
+		@include object-fit-cover;
+	}
+
+	&-contain {
+		@include object-fit-contain;
+	}
+}
+
+.visually-hidden {
+	@include visually-hidden;
+}
+
+.user-select-none {
+	user-select: none;
+}
+
+.pointer-events-none {
+	pointer-events: none;
+}
+
+.scrollbar {
+	max-height: 100%;
+
+	@include overflow-y-scroll;
+
+	/* Width */
+	&::-webkit-scrollbar {
+		display: block;
+		width: 4px;
+
+		@include large-tablet {
+			width: 2px;
+		}
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: #ccc;
+		border-radius: 100px;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: #000;
+		border-radius: 100px;
+	}
+}
+
+.overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background-color: rgba(#000, 0.8);
+	transition-property: opacity;
+
+	@include default-transition-state;
+}

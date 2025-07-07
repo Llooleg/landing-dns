@@ -1,0 +1,26 @@
+.section-core {
+	scroll-margin-top: 9rem;
+	padding: var(--section-offset) 0;
+
+	@include large-mobile {
+		scroll-margin-top: 8.1rem;
+	}
+
+	&:not(.section-core_padding-omit-top):first-child {
+		padding-top: 0;
+	}
+
+	&_padding {
+		&-omit {
+			padding: 0;
+
+			&-top {
+				padding-top: 0;
+			}
+
+			&-bottom {
+				padding-bottom: 0;
+			}
+		}
+	}
+}

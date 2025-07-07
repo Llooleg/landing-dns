@@ -1,0 +1,81 @@
+.item-card {
+	display: block;
+	height: 100%;
+	padding: 1px;
+	overflow: hidden;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 1rem;
+	transition-property: border-color;
+
+	@include default-transition-state;
+
+	&:hover {
+		&.item-card {
+			border-color: #d3d4d7;
+
+			.item-card {
+				&__caption {
+					color: #1c2428;
+				}
+
+				&__article {
+					color: #007971;
+				}
+			}
+		}
+	}
+
+	&_article-color-red {
+		&.item-card {
+			&:hover {
+				.item-card {
+					&__article {
+						color: #ab0c10;
+					}
+				}
+			}
+
+			.item-card {
+				&__article {
+					color: #de1e23;
+				}
+			}
+		}
+	}
+
+	&__module-photo {
+		position: relative;
+
+		&::before {
+			display: block;
+			padding-top: get-percent-part(230, 238);
+			content: '';
+		}
+
+		img {
+			border-radius: 1rem;
+		}
+	}
+
+	&__content {
+		padding: 1rem 2rem 2rem;
+	}
+
+	&__caption {
+		color: #415b66;
+		transition-property: color;
+
+		@include default-transition-state;
+		@include font-size-sm-bold;
+	}
+
+	&__article {
+		margin-top: 0.5rem;
+		color: $color-green;
+		transition-property: color;
+
+		@include default-transition-state;
+		@include font-size-sm;
+	}
+}

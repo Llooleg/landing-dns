@@ -1,0 +1,18 @@
+mixin section-category(props = {})
+	-
+		const { id, title, categoryList, previewVideoList } = props;
+
+	+section-core.section-category__(id=id)&attributes(attributes)
+		if title
+			+e.H2.title.h1
+				| #{ title }
+		if categoryList && categoryList.length
+			+e.UL.category-list
+				each itemCategory in categoryList
+					+e.LI.category-list-item
+						+item-category(itemCategory)
+		if previewVideoList && previewVideoList.length
+			+e.UL.preview-video-list
+				each itemPreviewVideo in previewVideoList
+					+e.LI.preview-video-list-item
+						+item-preview-video({...itemPreviewVideo, partIconBox: {...itemPreviewVideo.partIconBox, modes: ['medium']} })

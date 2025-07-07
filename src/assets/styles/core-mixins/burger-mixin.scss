@@ -1,0 +1,92 @@
+@mixin burger($width: 30px, $height: 30px, $lineWidth: 30px, $lineHeight: 5px, $gutter: 3px, $color: #000, $border-radius: 0) {
+	--burger-width: #{$width};
+	--burger-height: #{$height};
+	--burger-line-width: #{$lineWidth};
+	--burger-line-height: #{$lineHeight};
+	--burger-line-gutter: #{$gutter};
+	--burger-line-color: #{$color};
+	--burger-line-border-radius: #{$border-radius};
+
+	position: relative;
+	margin-top: calc(var(--burger-line-height) + var(--burger-line-gutter));
+	margin-bottom: calc(var(--burger-line-height) + var(--burger-line-gutter));
+	user-select: none;
+
+	&,
+	&::before,
+	&::after {
+		@if $border-radius != 0 {
+			border-radius: var(--burger-line-border-radius);
+		}
+
+		display: block;
+		width: var(--burger-line-width);
+		height: var(--burger-line-height);
+		pointer-events: none;
+		background-color: var(--burger-line-color);
+		outline: 1px solid transparent;
+		transition-timing-function: $default-transition-function;
+		transition-duration: $default-transition-duration;
+		transition-property: background-color, transform;
+		transform-origin: 50% 50%;
+		will-change: background-color, transform;
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		will-change: transform;
+	}
+
+	&::before {
+		top: calc(-1 * (var(--burger-line-height) + var(--burger-line-gutter)));
+	}
+
+	&::after {
+		top: calc(var(--burger-line-height) + var(--burger-line-gutter));
+	}
+}
+
+@mixin burger-parts {
+	&,
+	&::before,
+	&::after {
+		@content;
+	}
+}
+
+@mixin burger-top {
+	&::before {
+		@content;
+	}
+}
+
+@mixin burger-middle {
+	@content;
+}
+
+@mixin burger-bottom {
+	&::after {
+		@content;
+	}
+}
+
+@mixin burger-to-cross($color: auto) {
+	background-color: transparent;
+
+	@if $color != auto {
+		&::before,
+		&::after {
+			background-color: $color;
+		}
+	}
+
+	&::before {
+		transform: translateY(calc(var(--burger-line-gutter) + var(--burger-line-height))) rotate(45deg);
+	}
+
+	&::after {
+		transform: translateY(calc(-1 * (var(--burger-line-gutter) + var(--burger-line-height)))) rotate(-45deg);
+	}
+}

@@ -1,0 +1,20 @@
+.css-animation-popup-slide-up {
+	&:not(.is-opened) {
+		.overlay {
+			opacity: 0;
+		}
+
+		&.js-popup-wrapper,
+		.js-popup-wrapper {
+			opacity: 0;
+			transform: translateY(2rem);
+		}
+	}
+
+	&.js-popup-wrapper,
+	.js-popup-wrapper {
+		transition-property: opacity, transform;
+
+		@include default-transition-state;
+	}
+}

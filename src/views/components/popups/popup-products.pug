@@ -1,0 +1,51 @@
+-
+	const popupProducts = {
+		title: 'Модальное окно для просмотра продукции',
+		buttonClose: {
+			icon: {
+				name: 'icon-close',
+				viewBox: '0 0 22 22'
+			},
+		},
+		slider: {
+			id: 'popup-products-slider',
+			settings: {
+				arrows: true,
+				gap: '2rem',
+				perPage: 5,
+				breakpoints: {
+					1120: {
+						perPage: 4,
+					},
+					820: {
+						perPage: 3,
+					},
+					580: {
+						perPage: 2,
+					},
+					440: {
+						perPage: 1,
+					},
+				}
+			},
+			pagination: {},
+			navigation: {},
+		},
+		list: []
+	};
+mixin popup-products(props = {})
+	-
+		const { title, buttonClose, slider, list } = popupProducts;
+
+	+b#popup-products.SECTION.popup-products.js-popup.css-animation-popup-slide-up
+		h2.visually-hidden
+			| #{ title }
+		+e.overlay.overlay.js-popup-close
+		+e.wrapper.js-popup-wrapper
+			+e.BUTTON.button-close.js-popup-close
+				+svg-icon(buttonClose.icon)
+			+slider(slider).js-popup-content-slider
+				if list && list.length
+					each slide in list
+						+slider-slide
+							+item-card(slide)

@@ -1,0 +1,12 @@
+mixin part-icon-box(props = {})
+	-
+		const { elementModes, modes, icon } = props;
+		const filteredClasses = [
+			'part-icon-box',
+			elementModes && `_${elementModes.join(' _')}`,
+			'part-icon-box__',
+			modes && `_${modes.join(' _')}`,
+		].filter((el) => el).join(' ');
+
+	+e(class=filteredClasses)
+		+module-photo(icon)

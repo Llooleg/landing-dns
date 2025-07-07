@@ -1,0 +1,73 @@
+@use 'sass:color';
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:math';
+@use 'sass:meta';
+@use 'sass:selector';
+@use 'sass:string';
+@import './base/helpers';
+@include font-face(
+	'HelveticaNeueCyr',
+	'/src/assets/fonts/HelveticaNeueCyr-Roman',
+	400,
+	normal,
+	woff woff2,
+	(HelveticaNeueCyrRoman, HelveticaNeueCyr-Roman, HelveticaNeueCyr Roman)
+);
+@include font-face(
+	'HelveticaNeueCyr',
+	'/src/assets/fonts/HelveticaNeueCyr-RomanItalic',
+	400,
+	italic,
+	woff woff2,
+	(HelveticaNeueCyrRomanItalic, HelveticaNeueCyr-RomanItalic, HelveticaNeueCyr RomanItalic)
+);
+@include font-face(
+	'HelveticaNeueCyr',
+	'/src/assets/fonts/HelveticaNeueCyr-Medium',
+	500,
+	normal,
+	woff woff2,
+	(HelveticaNeueCyrMedium, HelveticaNeueCyr-Medium, HelveticaNeueCyr Medium)
+);
+@include font-face(
+	'HelveticaNeueCyr',
+	'/src/assets/fonts/HelveticaNeueCyr-MediumItalic',
+	500,
+	italic,
+	woff woff2,
+	(HelveticaNeueCyrMediumItalic, HelveticaNeueCyr-MediumItalic, HelveticaNeueCyr MediumItalic)
+);
+@include font-face(
+	'HelveticaNeueCyr',
+	'/src/assets/fonts/HelveticaNeueCyr-Bold',
+	700,
+	normal,
+	woff woff2,
+	(HelveticaNeueCyrBold, HelveticaNeueCyr-Bold, HelveticaNeueCyr Bold)
+);
+@include font-face(
+	'HelveticaNeueCyr',
+	'/src/assets/fonts/HelveticaNeueCyr-BoldItalic',
+	700,
+	italic,
+	woff woff2,
+	(HelveticaNeueCyrBoldItalic, HelveticaNeueCyr-BoldItalic, HelveticaNeueCyr BoldItalic)
+);
+@include font-face(
+	'Helvetica',
+	'/src/assets/fonts/Helvetica-Bold',
+	700,
+	normal,
+	woff woff2,
+	(HelveticaBold, Helvetica-Bold, Helvetica Bold)
+);
+@include font-face('Inter', '/src/assets/fonts/Inter-Medium', 500, normal, woff woff2, (InterMedium, Inter-Medium, Inter Medium));
+@include font-face(
+	'Inter',
+	'/src/assets/fonts/Inter-MediumItalic',
+	500,
+	italic,
+	woff woff2,
+	(InterMediumItalic, Inter-MediumItalic, Inter MediumItalic)
+);

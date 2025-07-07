@@ -1,0 +1,11 @@
+mixin slider-pagination(props = {})
+	-
+		const { modes, responsiveClass } = props;
+
+		const sliderPaginationFilteredClasses = [
+			modes && `_${modes.join(' _')}`,
+			'splide__pagination',
+			responsiveClass,
+		].filter(el => el).join(' ');
+
+	+e.slider-pagination.slider-pagination(class=sliderPaginationFilteredClasses)&attributes(attributes)

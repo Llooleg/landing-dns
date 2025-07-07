@@ -1,0 +1,17 @@
+-
+	const partMainContentData = {
+		section: {
+			tag: 'main',
+			id: 'part-main-content',
+			isSectionClass: false,
+			isCustomWrapper: true,
+		},
+	};
+
+mixin part-main-content(props = {})
+	-
+		const { section } = partMainContentData;
+
+	+section-core(section).part-main-content__.js-part-main-content&attributes(attributes)
+		if block
+			block

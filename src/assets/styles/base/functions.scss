@@ -1,0 +1,11 @@
+@function div($one, $two) {
+	@return math.div($one, $two);
+}
+
+@function get-width-except-gap($width, $gap, $count) {
+	@return calc(#{$width} - #{math.div($gap, $count) * ($count - 1)}rem);
+}
+
+@function get-percent-part($one, $two) {
+	@return calc(div($one, $two) * 100%);
+}

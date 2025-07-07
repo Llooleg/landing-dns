@@ -1,0 +1,23 @@
+.button-primary {
+	flex: 0 0 auto;
+	flex-flow: row nowrap;
+	width: fit-content;
+	max-width: 100%;
+
+	@include flex-center;
+
+	&_reverse {
+		flex-direction: row-reverse;
+	}
+
+	&__icon {
+		flex: 0 0 auto;
+	}
+
+	&__text {
+		flex: 1;
+		min-width: 0;
+
+		@include text-overflow;
+	}
+}

@@ -1,0 +1,23 @@
+.slider-navigation {
+	--slider-button: 6rem;
+
+	position: absolute;
+	inset: 50% calc(-1 * (var(--slider-button) / 2)) auto;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+	pointer-events: none;
+	transition-property: opacity;
+	transform: translateY(-50%);
+
+	@include default-transition-state;
+
+	@include large-tablet {
+		--slider-button: 4.5rem;
+	}
+
+	@include large-mobile {
+		--slider-button: 3rem;
+	}
+}
