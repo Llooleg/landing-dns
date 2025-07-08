@@ -110,7 +110,61 @@ import BOS6737E05DBG from '../../images/products/BOS6737E05DBG.jpg';
 import BOS6737E06WG from '../../images/products/BOS6737E06WG.jpg';
 //import BOS6737E06WG2x from '../../images/products/BOS6737E06WG@2x.jpg';
 import GO66E_Pizza350C from '../../images/products/GO66E_Pizza350C.jpg';
+
+
+//сушилки
+
+
+import D2HNE82C from '../../images/products/D2HNE82C.png';
+import D2HNE82C2x from '../../images/products/D2HNE82C.png';
+import DHNA92C from '../../images/products/DHNA92C.png';
+import DHNA92C2x from '../../images/products/DHNA92C.png';
+import DNS92SWIFIC from '../../images/products/DNS92SWIFIC.png';
+import DNS92SWIFIC2x from '../../images/products/DNS92SWIFIC.png';
+import DPNE82GNLWIFIBC from '../../images/products/DPNE82GNLWIFIBC.png';
+import DPNE82GNLWIFIBC2x from '../../images/products/DPNE82GNLWIFIBC.png';
 const data = {
+
+	// сушилки
+	D2HNE82C: {
+		caption: 'Сушильная машина',
+		modulePhoto: {
+			url: D2HNE82C,
+			url2x: D2HNE82C,
+		},
+		type: 'Сушильные машины',
+		url: 'https://www.dns-shop.ru/product/b7b8c4f8e4f2b67b/susilnaa-masina-gorenje-d2hne82c-belyj/',
+	},
+	
+	DHNA92C: {
+		caption: 'Сушильная машина',
+		modulePhoto: {
+			url: DHNA92C,
+			url2x: DHNA92C,
+		},
+		type: 'Сушильные машины',
+		url: 'https://www.dns-shop.ru/product/b7b8c4f8e4f2b67b/susilnaa-masina-gorenje-dhna92c-belyj/',
+	},
+	
+	DNS92SWIFIC: {
+		caption: 'Сушильная машина',
+		modulePhoto: {
+			url: DNS92SWIFIC,
+			url2x: DNS92SWIFIC,
+		},
+		type: 'Сушильные машины',
+		url: 'https://www.dns-shop.ru/product/b7b8c4f8e4f2b67b/susilnaa-masina-gorenje-dns92swific-belyj/',
+	},
+	
+	DPNE82GNLWIFIBC: {
+		caption: 'Сушильная машина',
+		modulePhoto: {
+			url: DPNE82GNLWIFIBC,
+			url2x: DPNE82GNLWIFIBC,
+		},
+		type: 'Сушильные машины',
+		url: 'https://www.dns-shop.ru/product/b7b8c4f8e4f2b67b/susilnaa-masina-gorenje-dpne82gnlwifibc-belyj/',
+	},
 	/* старые шкафы
 	BO6737E03AWG: {
 		caption: 'Духовой шкаф',
@@ -156,7 +210,7 @@ const data = {
 		},
 		type: 'Духовые шкафы',
 		url: 'https://www.dns-shop.ru/product/1595900da7be2eb0/elektriceskij-duhovoj-skaf-gorenje-bsa6747a04bg-cernyj/',
-	},*/
+	},
 	DNA82: {
 		caption: 'Сушильная машина',
 		modulePhoto: {
@@ -183,7 +237,8 @@ const data = {
 		},
 		type: 'Сушильные машины',
 		url: 'https://www.dns-shop.ru/product/9396c8a24df35726/susilnaa-masina-gorenje-dne92gn-belyj/',
-	},
+	},*/
+
 	ECT643BSC: {
 		caption: 'Варочная панель',
 		modulePhoto: {
