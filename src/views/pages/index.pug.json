@@ -72,7 +72,7 @@
 						"isObjectFitCover": false
 					}
 				},
-				"caption": "Охлаждение и заморозка"
+				"caption": "Охлаждение"
 			},
 			{
 				"url": "#section-clothes",
@@ -355,7 +355,7 @@
 	},
 	"SectionCategoryFreezingData": {
 		"id": "section-freezing",
-		"title": "Охлаждение и заморозка",
+		"title": "Охлаждение",
 		"categoryList": [
 			{
 				"caption": "Холодильники <br/>Side-by-side",

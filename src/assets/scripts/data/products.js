@@ -86,7 +86,11 @@ import W1NHA74SAS from '../../images/products/W1NHA74SAS.jpg';
 import W1NHA74SAS2x from '../../images/products/W1NHA74SAS@2x.jpg';
 import W2NHPI62SCSS from '../../images/products/W2NHPI62SCSS.jpg';
 import W2NHPI62SCSS2x from '../../images/products/W2NHPI62SCSS@2x.jpg';
-
+import WNS94A1AWIFIC from '../../images/products/WNS94A1AWIFIC.png';
+import W1NHPI72SCSIRV from '../../images/products/W1NHPI72SCSIRV.png';
+import W1NHA74SAS from '../../images/products/W1NHA74SAS.png';
+import WPNEI84A1SWIFIBC from '../../images/products/WPNEI84A1SWIFIBC.png';
+import W2NHPI62SCSS from '../../images/products/W2NHPI62SCSS.png';
 const data = {
 	BO6737E03AWG: {
 		caption: 'Духовой шкаф',
@@ -484,6 +488,52 @@ const data = {
 		type: 'Стиральные машины',
 		url: 'https://www.dns-shop.ru/product/17ebe93aced3ed20/stiralnaa-masina-gorenje-w2nhpi62scss-seryj/',
 	},
+	WNS94A1AWIFIC: {
+		caption: 'Стиральная машина',
+		modulePhoto: {
+			url: WNS94A1AWIFIC,
+			url2x: WNS94A1AWIFIC, // временно та же картинка
+		},
+		type: 'Стиральные машины',
+		url: 'https://www.dns-shop.ru/product/',
+	},
+	W1NHPI72SCSIRV: {
+		caption: 'Стиральная машина',
+		modulePhoto: {
+			url: W1NHPI72SCSIRV,
+			url2x: W1NHPI72SCSIRV, // временно та же картинка
+		},
+		type: 'Стиральные машины',
+		url: 'https://www.dns-shop.ru/product/',
+	},
+	W1NHA74SAS: {
+		caption: 'Стиральная машина',
+		modulePhoto: {
+			url: W1NHA74SAS,
+			url2x: W1NHA74SAS, // временно та же картинка
+		},
+		type: 'Стиральные машины',
+		url: 'https://www.dns-shop.ru/product/',
+	},
+	WPNEI84A1SWIFIBC: {
+		caption: 'Стиральная машина',
+		modulePhoto: {
+			url: WPNEI84A1SWIFIBC,
+			url2x: WPNEI84A1SWIFIBC, // временно та же картинка
+		},
+		type: 'Стиральные машины',
+		url: 'https://www.dns-shop.ru/product/',
+	},
+	W2NHPI62SCSS: {
+		caption: 'Стиральная машина',
+		modulePhoto: {
+			url: W2NHPI62SCSS,
+			url2x: W2NHPI62SCSS, // временно та же картинка
+		},
+		type: 'Стиральные машины',
+		url: 'https://www.dns-shop.ru/product/',
+	},
 };
+
 
 export default data;
