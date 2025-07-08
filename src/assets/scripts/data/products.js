@@ -105,10 +105,10 @@ import GG5A12WF from '../../images/products/GG5A12WF.png';
 import GEC5C41SG from '../../images/products/GEC5C41SG.png';
 
 // Добавляем импорты для новых изображений духовых шкафов
-import BO6737E02NX from '../../images/products/BO6737E02NX.';
+import BO6737E02NX from '../../images/products/BO6737E02NX.jpg';
 import BOS6737E05DBG from '../../images/products/BOS6737E05DBG.jpg';
 import BOS6737E06WG from '../../images/products/BOS6737E06WG.jpg';
-import BOS6737E06WG2x from '../../images/products/BOS6737E06WG@2x.jpg';
+//import BOS6737E06WG2x from '../../images/products/BOS6737E06WG@2x.jpg';
 import GO66E_Pizza350C from '../../images/products/GO66E_Pizza350C.jpg';
 const data = {
 	/* старые шкафы
