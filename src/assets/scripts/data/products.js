@@ -150,11 +150,47 @@ import GV663D622x from '../../images/products/GV663D62.png';
 import GV693A65AD from '../../images/products/GV693A65AD.jpg';
 import GV693A65AD2x from '../../images/products/GV693A65AD.jpg';
 
-
+// холодильники
+import NRK6202EBXL4 from '../../images/products/NRK6202EBXL4.png';
+import NRK6202EBXL42x from '../../images/products/NRK6202EBXL4.png';
+import NRK51814W4 from '../../images/products/NRK51814W4.png';
+import NRK51814W42x from '../../images/products/NRK51814W4.png';
+import NRKP61EA2XL4 from '../../images/products/NRKP61EA2XL4.png';
+import NRKP61EA2XL42x from '../../images/products/NRKP61EA2XL4.png';
 
 
 
 const data = {
+	// холодильники
+	NRK6202FBXL4: {
+		caption: 'Холодильник',
+		modulePhoto: {
+			url: NRK6202EBXL4,
+			url2x: NRK6202EBXL42x,
+		},
+		type: 'Холодильники',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/holodilnik-gorenje-nrk6202fbxl4/',
+	},
+	
+	NRK51814W4: {
+		caption: 'Холодильник',
+		modulePhoto: {
+			url: NRK51814W4,
+			url2x: NRK51814W42x,
+		},
+		type: 'Холодильники',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/holodilnik-gorenje-nrk51814w4/',
+	},
+	
+	NRKP61EA2XL4: {
+		caption: 'Холодильник',
+		modulePhoto: {
+			url: NRKP61EA2XL4,
+			url2x: NRKP61EA2XL42x,
+		},
+		type: 'Холодильники',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/holodilnik-gorenje-nrkp61ea2xl4/',
+	},
     // встравиваемые посудомоечные машины
     GV520E10S: {
         caption: 'Посудомоечная машина',
