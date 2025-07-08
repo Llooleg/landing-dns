@@ -98,14 +98,14 @@ import NRKI519141 from '../../images/products/NRKI519141.png';
 import RI517E41WF from '../../images/products/RI517E41WF.png';
 
 
-import GEC5A12SG from '../../images/products/GEC5A12SG.jpg';
+import GEC5A12SG from '../../images/products/GEC5A12SG.png';
 //import GEC5A12WG-B from '../../images/products/GEC5A12WG-B.jpg';
-import GK5C40WF from '../../images/products/GK5C40WF.jpg';
-import GG5A12WF from '../../images/products/GG5A12WF.jpg';
-import GEC5C41SG from '../../images/products/GEC5C41SG.jpg';
+import GK5C40WF from '../../images/products/GK5C40WF.png';
+import GG5A12WF from '../../images/products/GG5A12WF.png';
+import GEC5C41SG from '../../images/products/GEC5C41SG.png';
 
 // Добавляем импорты для новых изображений духовых шкафов
-import BO6737E02NX from '../../images/products/BO6737E02NX.jpg';
+import BO6737E02NX from '../../images/products/BO6737E02NX.';
 import BOS6737E05DBG from '../../images/products/BOS6737E05DBG.jpg';
 import BOS6737E06WG from '../../images/products/BOS6737E06WG.jpg';
 import BOS6737E06WG2x from '../../images/products/BOS6737E06WG@2x.jpg';
