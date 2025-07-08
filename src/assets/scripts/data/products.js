@@ -64,7 +64,7 @@ import GV643E90 from '../../images/products/GV643E90.jpg';
 import GV643E902x from '../../images/products/GV643E90@2x.jpg';
 import GV693B67AD from '../../images/products/GV693B67AD.jpg';
 import GV693B67AD2x from '../../images/products/GV693B67AD@2x.jpg';
-import NRK620FABK4 from '../../images/products/NRK620FABK4.jpg';
+/*import NRK620FABK4 from '../../images/products/NRK620FABK4.jpg';
 import NRK620FABK42x from '../../images/products/NRK620FABK4@2x.jpg';
 import NRK620FAW4 from '../../images/products/NRK620FAW4.jpg';
 import NRK620FAW42x from '../../images/products/NRK620FAW4@2x.jpg';
@@ -73,17 +73,17 @@ import NRKI4182P12x from '../../images/products/NRKI4182P1@2x.jpg';
 import NRR9185EABXLWD from '../../images/products/NRR9185EABXLWD.jpg';
 import NRR9185EABXLWD2x from '../../images/products/NRR9185EABXLWD@2x.jpg';
 import NRR9185EAXLWD from '../../images/products/NRR9185EAXLWD.jpg';
-import NRR9185EAXLWD2x from '../../images/products/NRR9185EAXLWD@2x.jpg';
-import R491PW from '../../images/products/R491PW.jpg';
-import R491PW2x from '../../images/products/R491PW@2x.jpg';
-import RKI2181E1 from '../../images/products/RKI2181E1.jpg';
-import RKI2181E12x from '../../images/products/RKI2181E1@2x.jpg';
+import NRR9185EAXLWD2x from '../../images/products/NRR9185EAXLWD@2x.jpg';*/
+//import R491PW from '../../images/products/R491PW.jpg';
+//import R491PW2x from '../../images/products/R491PW@2x.jpg';
+//import RKI2181E1 from '../../images/products/RKI2181E1.jpg';
+//import RKI2181E12x from '../../images/products/RKI2181E1@2x.jpg';
 import W1D2A164ADS from '../../images/products/W1D2A164ADS.jpg';
-import W1D2A164ADS2x from '../../images/products/W1D2A164ADS@2x.jpg';
-import W1NHA62SAS from '../../images/products/W1NHA62SAS.jpg';
-import W1NHA62SAS2x from '../../images/products/W1NHA62SAS@2x.jpg';
-import W1NHA74SAS from '../../images/products/W1NHA74SAS.jpg';
-import W1NHA74SAS2x from '../../images/products/W1NHA74SAS@2x.jpg';
+//import W1D2A164ADS2x from '../../images/products/W1D2A164ADS@2x.jpg';
+//import W1NHA62SAS from '../../images/products/W1NHA62SAS.jpg';
+//import W1NHA62SAS2x from '../../images/products/W1NHA62SAS@2x.jpg';
+//import W1NHA74SAS from '../../images/products/W1NHA74SAS.jpg';
+//import W1NHA74SAS2x from '../../images/products/W1NHA74SAS@2x.jpg';
 import W2NHPI62SCSS from '../../images/products/W2NHPI62SCSS.jpg';
 import W2NHPI62SCSS2x from '../../images/products/W2NHPI62SCSS@2x.jpg';
 import WNS94A1AWIFIC from '../../images/products/WNS94A1AWIFIC.png';
@@ -91,7 +91,27 @@ import W1NHPI72SCSIRV from '../../images/products/W1NHPI72SCSIRV.png';
 import W1NHA74SAS from '../../images/products/W1NHA74SAS.png';
 import WPNEI84A1SWIFIBC from '../../images/products/WPNEI84A1SWIFIBC.png';
 import W2NHPI62SCSS from '../../images/products/W2NHPI62SCSS.png';
+import NRKI4182P1 from '../../images/products/NRKI4182P1.png';
+import NRKI517141 from '../../images/products/NRKI517141.png';
+import NRKI517162WF from '../../images/products/NRKI517162WF.png';
+import NRKI519141 from '../../images/products/NRKI519141.png';
+import RI517E41WF from '../../images/products/RI517E41WF.png';
+
+
+import GEC5A12SG from '../../images/products/GEC5A12SG.jpg';
+//import GEC5A12WG-B from '../../images/products/GEC5A12WG-B.jpg';
+import GK5C40WF from '../../images/products/GK5C40WF.jpg';
+import GG5A12WF from '../../images/products/GG5A12WF.jpg';
+import GEC5C41SG from '../../images/products/GEC5C41SG.jpg';
+
+// Добавляем импорты для новых изображений духовых шкафов
+import BO6737E02NX from '../../images/products/BO6737E02NX.jpg';
+import BOS6737E05DBG from '../../images/products/BOS6737E05DBG.jpg';
+import BOS6737E06WG from '../../images/products/BOS6737E06WG.jpg';
+import BOS6737E06WG2x from '../../images/products/BOS6737E06WG@2x.jpg';
+import GO66E_Pizza350C from '../../images/products/GO66E_Pizza350C.jpg';
 const data = {
+	/* старые шкафы
 	BO6737E03AWG: {
 		caption: 'Духовой шкаф',
 		modulePhoto: {
@@ -136,7 +156,7 @@ const data = {
 		},
 		type: 'Духовые шкафы',
 		url: 'https://www.dns-shop.ru/product/1595900da7be2eb0/elektriceskij-duhovoj-skaf-gorenje-bsa6747a04bg-cernyj/',
-	},
+	},*/
 	DNA82: {
 		caption: 'Сушильная машина',
 		modulePhoto: {
@@ -218,6 +238,75 @@ const data = {
 		type: 'Морозильные лари',
 		url: 'https://www.dns-shop.ru/product/7feda69e24b33332/morozilnyj-lar-gorenje-fh451cw-belyj/',
 	},
+
+
+
+	GEC5A12SG: {
+		caption: 'Плита',
+		modulePhoto: {
+			url: GEC5A12SG,
+			url2x: GEC5A12SG2x,
+		},
+		type: 'Плиты',
+		url: 'https://www.dns-shop.ru/product/gec5a12sg/', // замените на актуальные URL
+	},
+	GEC5A12WG: {
+		caption: 'Плита',
+		modulePhoto: {
+			url: GEC5A12WG,
+			url2x: GEC5A12WG2x,
+		},
+		type: 'Плиты',
+		url: 'https://www.dns-shop.ru/product/gec5a12wg/',
+	},
+	GK5C40WF: {
+		caption: 'Плита',
+		modulePhoto: {
+			url: GK5C40WF,
+			url2x: GK5C40WF2x,
+		},
+		type: 'Плиты',
+		url: 'https://www.dns-shop.ru/product/gk5c40wf/',
+	},
+	
+	// Новые духовые шкафы
+	BO6737E02NX: {
+		caption: 'Духовой шкаф',
+		modulePhoto: {
+			url: BO6737E02NX,
+			url2x: BO6737E02NX2x,
+		},
+		type: 'Духовые шкафы',
+		url: 'https://www.dns-shop.ru/product/bo6737e02nx/',
+	},
+	BOS6737E05DBG: {
+		caption: 'Духовой шкаф',
+		modulePhoto: {
+			url: BOS6737E05DBG,
+			url2x: BOS6737E05DBG2x,
+		},
+		type: 'Духовык шкафы',
+		url: 'https://www.dns-shop.ru/product/bos6737e05dbg/',
+	},
+	BOS6737E06WG: {
+		caption: 'Духовой шкаф',
+		modulePhoto: {
+			url: BOS6737E06WG,
+			url2x: BOS6737E06WG2x,
+		},
+		type: 'Духовые шкафы',
+		url: 'https://www.dns-shop.ru/product/bos6737e06wg/',
+	},
+	GO66E_Pizza350C: {
+		caption: 'Духовой шкаф',
+		modulePhoto: {
+			url: GO66E_Pizza350C,
+			url2x: GO66E_Pizza350C2x,
+		},
+		type: 'Духовые шкафы',
+		url: 'https://www.dns-shop.ru/product/go66e-pizza350c/',
+	},
+	/*
 	GEC5C41SG: {
 		caption: 'Плита',
 		modulePhoto: {
@@ -280,7 +369,7 @@ const data = {
 		},
 		type: 'Плиты',
 		url: 'https://www.dns-shop.ru/product/f9b1adea2f61a77f/kombinirovannaa-plita-gorenje-gk5c41sf-seryj/',
-	},
+	},*/
 	GS520E15W: {
 		caption: 'Посудомоечная машина',
 		modulePhoto: {
@@ -452,7 +541,7 @@ const data = {
 		type: 'Холодильники двухдверные',
 		url: 'https://www.dns-shop.ru/product/fc38c383c6ab3330/vstraivaemyj-kholodilnik-gorenje-rki2181e1/',
 	},
-	W1D2A164ADS: {
+	/*W1D2A164ADS: {
 		caption: 'Стиральная машина',
 		modulePhoto: {
 			url: W1D2A164ADS,
@@ -487,7 +576,7 @@ const data = {
 		},
 		type: 'Стиральные машины',
 		url: 'https://www.dns-shop.ru/product/17ebe93aced3ed20/stiralnaa-masina-gorenje-w2nhpi62scss-seryj/',
-	},
+	},*/
 	WNS94A1AWIFIC: {
 		caption: 'Стиральная машина',
 		modulePhoto: {
@@ -531,6 +620,51 @@ const data = {
 			url2x: W2NHPI62SCSS, // временно та же картинка
 		},
 		type: 'Стиральные машины',
+		url: 'https://www.dns-shop.ru/product/',
+	},
+	NRKI4182P1: {
+		caption: 'Встраиваемый двухдверный холодильник',
+		modulePhoto: {
+			url: NRKI4182P1,
+			url2x: NRKI4182P1, // временно та же картинка
+		},
+		type: 'Встраиваемые двухдверные холодильники',
+		url: 'https://www.dns-shop.ru/product/',
+	},
+	NRKI517141: {
+		caption: 'Встраиваемый двухдверный холодильник',
+		modulePhoto: {
+			url: NRKI517141,
+			url2x: NRKI517141, // временно та же картинка
+		},
+		type: 'Встраиваемые двухдверные холодильники',
+		url: 'https://www.dns-shop.ru/product/',
+	},
+	NRKI517162WF: {
+		caption: 'Встраиваемый двухдверный холодильник',
+		modulePhoto: {
+			url: NRKI517162WF,
+			url2x: NRKI517162WF, // временно та же картинка
+		},
+		type: 'Встраиваемые двухдверные холодильники',
+		url: 'https://www.dns-shop.ru/product/',
+	},
+	NRKI519141: {
+		caption: 'Встраиваемый двухдверный холодильник',
+		modulePhoto: {
+			url: NRKI519141,
+			url2x: NRKI519141, // временно та же картинка
+		},
+		type: 'Встраиваемые двухдверные холодильники',
+		url: 'https://www.dns-shop.ru/product/',
+	},
+	RI517E41WF: {
+		caption: 'Встраиваемый двухдверный холодильник',
+		modulePhoto: {
+			url: RI517E41WF,
+			url2x: RI517E41WF, // временно та же картинка
+		},
+		type: 'Встраиваемые двухдверные холодильники',
 		url: 'https://www.dns-shop.ru/product/',
 	},
 };
