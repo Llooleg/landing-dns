@@ -58,12 +58,12 @@ import GV520E10S from '../../images/products/GV520E10S.jpg';
 import GV520E10S2x from '../../images/products/GV520E10S@2x.jpg';
 import GV561D10 from '../../images/products/GV561D10.jpg';
 import GV561D102x from '../../images/products/GV561D10@2x.jpg';
-import GV643D60 from '../../images/products/GV643D60.jpg';
-import GV643D602x from '../../images/products/GV643D60@2x.jpg';
-import GV643E90 from '../../images/products/GV643E90.jpg';
-import GV643E902x from '../../images/products/GV643E90@2x.jpg';
-import GV693B67AD from '../../images/products/GV693B67AD.jpg';
-import GV693B67AD2x from '../../images/products/GV693B67AD@2x.jpg';
+//import GV643D60 from '../../images/products/GV643D60.jpg';
+//import GV643D602x from '../../images/products/GV643D60@2x.jpg';
+//import GV643E90 from '../../images/products/GV643E90.jpg';
+//import GV643E902x from '../../images/products/GV643E90@2x.jpg';
+//import GV693B67AD from '../../images/products/GV693B67AD.jpg';
+//import GV693B67AD2x from '../../images/products/GV693B67AD@2x.jpg';
 /*import NRK620FABK4 from '../../images/products/NRK620FABK4.jpg';
 import NRK620FABK42x from '../../images/products/NRK620FABK4@2x.jpg';
 import NRK620FAW4 from '../../images/products/NRK620FAW4.jpg';
@@ -123,7 +123,144 @@ import DNS92SWIFIC from '../../images/products/DNS92SWIFIC.png';
 import DNS92SWIFIC2x from '../../images/products/DNS92SWIFIC.png';
 import DPNE82GNLWIFIBC from '../../images/products/DPNE82GNLWIFIBC.png';
 import DPNE82GNLWIFIBC2x from '../../images/products/DPNE82GNLWIFIBC.png';
+
+
+
+// варочные панели
+import ECS642BXE from '../../images/products/ECS642BXE.png';
+import ECS642BXE2x from '../../images/products/ECS642BXE.png';
+import ECT64BSCE from '../../images/products/ECT64BSCE.png';
+import ECT64BSCE2x from '../../images/products/ECT64BSCE.png';
+import GI6401BCE from '../../images/products/GI6401BCE.png';
+import GI6401BCE2x from '../../images/products/GI6401BCE.png';
+import GI6432BSCE from '../../images/products/GI6432BSCE.png';
+import GI6432BSCE2x from '../../images/products/GI6432BSCE.png';
+import GT642AB from '../../images/products/GT642AB.png';
+import GT642AB2x from '../../images/products/GT642AB.png';
+
+// встравиваемые посудомоечные машины
+import GV520E10S from '../../images/products/GV520E10S.jpg';
+import GV520E10S2x from '../../images/products/GV520E10S@2x.jpg';
+import GV561D10 from '../../images/products/GV561D10.jpg';
+import GV561D102x from '../../images/products/GV561D10@2x.jpg';
+import GV643D60 from '../../images/products/GV643D60.jpg';
+import GV643D602x from '../../images/products/GV643D60@2x.jpg';
+import GV663D62 from '../../images/products/GV663D62.png';
+import GV663D622x from '../../images/products/GV663D62.png';
+import GV693A65AD from '../../images/products/GV693A65AD.jpg';
+import GV693A65AD2x from '../../images/products/GV693A65AD.jpg';
+
+
+
+
+
 const data = {
+    // встравиваемые посудомоечные машины
+    GV520E10S: {
+        caption: 'Посудомоечная машина',
+        modulePhoto: {
+            url: GV520E10S,
+            url2x: GV520E10S2x,
+        },
+		type: 'Посудомоечные машины',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/posudomoecnaa-masina-gorenje-gv520e10s-belyj/',
+	},
+	
+	GV561D10: {
+		caption: 'Посудомоечная машина',
+		modulePhoto: {
+			url: GV561D10,
+			url2x: GV561D102x,
+		},
+		type: 'Посудомоечные машины',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/posudomoecnaa-masina-gorenje-gv561d10-belyj/',
+	},
+		
+	
+	
+	GV643D60: {
+		caption: 'Встраиваемая посудомоечная машина',
+		modulePhoto: {
+			url: GV643D60,
+			url2x: GV643D602x,
+		},
+		type: 'Встраиваемые посудомоечные машины',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/vstraivaemaa-posudomoecnaa-masina-gorenje-gv643d60/',
+	},
+	
+	GV663D62: {
+		caption: 'Встраиваемая посудомоечная машина',
+		modulePhoto: {
+			url: GV663D62,
+			url2x: GV663D622x,
+		},
+		type: 'Встраиваемые посудомоечные машины',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/vstraivaemaa-posudomoecnaa-masina-gorenje-gv663d62/',
+	},
+	
+	GV693A65AD: {
+		caption: 'Встраиваемая посудомоечная машина',
+		modulePhoto: {
+			url: GV693A65AD,
+			url2x: GV693A65AD2x,
+		},
+		type: 'Встраиваемые посудомоечные машины',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/vstraivaemaa-posudomoecnaa-masina-gorenje-gv693a65ad/',
+	},
+	
+
+	// варочные панели
+	ECS642BXE: {
+		caption: 'Варочная панель',
+		modulePhoto: {
+			url: ECS642BXE,
+			url2x: ECS642BXE2x,
+		},
+		type: 'Варочные панели',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-ecs642bxe/',
+	},
+	
+	ECT64BSCE: {
+		caption: 'Варочная панель',
+		modulePhoto: {
+			url: ECT64BSCE,
+			url2x: ECT64BSCE2x,
+		},
+		type: 'Варочные панели',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-ect64bsce/',
+	},
+	
+	GI6401BCE: {
+		caption: 'Варочная панель',
+		modulePhoto: {
+			url: GI6401BCE,
+			url2x: GI6401BCE2x,
+		},
+		type: 'Варочные панели',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-gi6401bce/',
+	},
+	
+	GI6432BSCE: {
+		caption: 'Варочная панель',
+		modulePhoto: {
+			url: GI6432BSCE,
+			url2x: GI6432BSCE2x,
+		},
+		type: 'Варочные панели',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-gi6432bsce/',
+	},
+	
+	GT642AB: {
+		caption: 'Варочная панель',
+		modulePhoto: {
+			url: GT642AB,
+			url2x: GT642AB2x,
+		},
+		type: 'Варочные панели',
+		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-gt642ab/',
+	},
+
+
 
 	// сушилки
 	D2HNE82C: {
