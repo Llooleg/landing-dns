@@ -96,10 +96,10 @@ import GEC5A12WG from '../../images/products/GEC5A12WG.png';
 import GEC5A12WG2x from '../../images/products/GEC5A12WG.png';
 import GK5C40WF from '../../images/products/GK5C40WF.png';
 import GK5C40WF2x from '../../images/products/GK5C40WF.png';
-import GG5A12WF from '../../images/products/GG5A12WF.jpg';
-import GG5A12WF2x from '../../images/products/GG5A12WF@2x.jpg';
+
 import GEC5C41SG from '../../images/products/GEC5C41SG.jpg';
 import GEC5C41SG2x from '../../images/products/GEC5C41SG@2x.jpg';
+//ДУХОВЫЕ ШКАФЫ
 
 // Добавляем импорты для новых изображений духовых шкафов
 import BO6737E02NX from '../../images/products/BO6737E02NX.jpg';
@@ -155,14 +155,23 @@ import GV663D62 from '../../images/products/GV663D62.png';
 import GV663D622x from '../../images/products/GV663D62.png';
 
 // холодильники
-import NRK6202EBXL4 from '../../images/products/NRK6202EBXL4.png';
-import NRK6202EBXL42x from '../../images/products/NRK6202EBXL4.png';
-import NRK51814W4 from '../../images/products/NRK51814W4.png';
-import NRK51814W42x from '../../images/products/NRK51814W4.png';
-import NRKP61EA2XL4 from '../../images/products/NRKP61EA2XL4.png';
-import NRKP61EA2XL42x from '../../images/products/NRKP61EA2XL4.png';
+import NRK6202EBXL4 from '../../images/products/NRK6202EBXL4.jpg';
+import NRK6202EBXL42x from '../../images/products/NRK6202EBXL4.jpg';
+import NRK51814W4 from '../../images/products/NRK51814W4.jpg';
+import NRK51814W42x from '../../images/products/NRK51814W4.jpg';
+import NRKP61EA2XL4 from '../../images/products/NRKP61EA2XL4.jpg';
+import NRKP61EA2XL42x from '../../images/products/NRKP61EA2XL4.jpg';
 
+//посудомоечная машина
+import GS643C90W from '../../images/products/GS643C90W.jpg';
+import GS643C90W2x from '../../images/products/GS643C90W.jpg';
 
+//ПЛИТЫ
+
+import GG5A12WF from '../../images/products/GG5A12WF.jpg';
+import GG5A12WF2x from '../../images/products/GG5A12WF@2x.jpg';
+import GEC5A12WG_B from '../../images/products/GEC5A12WG-B.jpg';
+import GEC5A12WG_B2x from '../../images/products/GEC5A12WG-B.jpg';
 
 const data = {
 	// холодильники
@@ -360,16 +369,9 @@ const data = {
 		},
 		type: 'Духовые шкафы',
 		url: 'https://www.dns-shop.ru/product/15959013a7be2eb0/elektriceskij-duhovoj-skaf-gorenje-bob6737e01x-serebristyj/',
-	},
-	BOSB6737E06X: {
-		caption: 'Духовой шкаф',
-		modulePhoto: {
-			url: BOSB6737E06X,
-			url2x: BOSB6737E06X2x,
-		},
-		type: 'Духовые шкафы',
-		url: 'https://www.dns-shop.ru/product/15959015a7be2eb0/elektriceskij-duhovoj-skaf-gorenje-bosb6737e06x-serebristyj/',
-	},
+	},*/
+	
+	/*
 	BOSX6737E09BG: {
 		caption: 'Духовой шкаф',
 		modulePhoto: {
@@ -378,7 +380,8 @@ const data = {
 		},
 		type: 'Духовые шкафы',
 		url: 'https://www.dns-shop.ru/product/21e3c41311f8d1f4/elektriceskij-duhovoj-skaf-gorenje-bosx6737e09bg-cernyj/',
-	},
+	},*/
+
 	BSA6747A04BG: {
 		caption: 'Духовой шкаф',
 		modulePhoto: {
@@ -387,7 +390,7 @@ const data = {
 		},
 		type: 'Духовые шкафы',
 		url: 'https://www.dns-shop.ru/product/1595900da7be2eb0/elektriceskij-duhovoj-skaf-gorenje-bsa6747a04bg-cernyj/',
-	},
+	},/*
 	DNA82: {
 		caption: 'Сушильная машина',
 		modulePhoto: {
@@ -415,7 +418,7 @@ const data = {
 		type: 'Сушильные машины',
 		url: 'https://www.dns-shop.ru/product/9396c8a24df35726/susilnaa-masina-gorenje-dne92gn-belyj/',
 	},*/
-
+/*
 	ECT643BSC: {
 		caption: 'Варочная панель',
 		modulePhoto: {
@@ -424,7 +427,7 @@ const data = {
 		},
 		type: 'Варочные панели',
 		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-ect643bsc/',
-	},
+	},*/
 	FH10FPW: {
 		caption: 'Морозильный ларь',
 		modulePhoto: {
@@ -482,11 +485,11 @@ const data = {
 		type: 'Плиты',
 		url: 'https://www.dns-shop.ru/product/gec5a12sg/', // замените на актуальные URL
 	},
-	GEC5A12WG: {
+	GEC5A12WG_B: {
 		caption: 'Плита',
 		modulePhoto: {
-			url: GEC5A12WG,
-			url2x: GEC5A12WG2x,
+			url: GEC5A12WG_B,
+			url2x: GEC5A12WG_B2x,
 		},
 		type: 'Плиты',
 		url: 'https://www.dns-shop.ru/product/gec5a12wg/',
@@ -517,7 +520,7 @@ const data = {
 			url: BOS6737E05DBG,
 			url2x: BOS6737E05DBG2x,
 		},
-		type: 'Духовык шкафы',
+		type: 'Духовые шкафы',
 		url: 'https://www.dns-shop.ru/product/bos6737e05dbg/',
 	},
 	BOS6737E06WG: {
@@ -538,7 +541,7 @@ const data = {
 		type: 'Духовые шкафы',
 		url: 'https://www.dns-shop.ru/product/go66e-pizza350c/',
 	},
-	/*
+	
 	GEC5C41SG: {
 		caption: 'Плита',
 		modulePhoto: {
@@ -547,7 +550,7 @@ const data = {
 		},
 		type: 'Плиты',
 		url: 'https://www.dns-shop.ru/product/690cf8c48b4b0b83/elektriceskaa-plita-gorenje-gec5c41sg-seryj/',
-	},
+	},/*
 	GEC5C42WG: {
 		caption: 'Плита',
 		modulePhoto: {
@@ -565,7 +568,8 @@ const data = {
 		},
 		type: 'Плиты',
 		url: 'https://www.dns-shop.ru/product/090995f7c770364e/elektriceskaa-plita-gorenje-geit5c61xpg-seryj/',
-	},
+	}
+	*/
 	GG5A12WF: {
 		caption: 'Плита',
 		modulePhoto: {
@@ -574,7 +578,7 @@ const data = {
 		},
 		type: 'Плиты',
 		url: 'https://www.dns-shop.ru/product/49ba0455d2f75a1c/gazovaa-plita-gorenje-gg5a12wf-belyj/',
-	},
+	},/*
 	GI6401BCE: {
 		caption: 'Варочная панель',
 		modulePhoto: {
@@ -612,12 +616,12 @@ const data = {
 		url: 'https://www.dns-shop.ru/product/8ff1c24772adc824/posudomoecnaa-masina-gorenje-gs520e15w-belyj/',
 	},
 	GS541D10W: {
-		caption: 'Посудомоечная машина',
+		caption: 'Встраиваемая посудомоечная машина',
 		modulePhoto: {
 			url: GS541D10W,
 			url2x: GS541D10W2x,
 		},
-		type: 'Посудомоечные машины',
+		type: 'Встраиваемые посудомоечные машины',
 		url: 'https://www.dns-shop.ru/product/56a562b4e5a43332/posudomoecnaa-masina-gorenje-gs541d10w-belyj/',
 	},
 	GS541D10X: {
@@ -638,15 +642,15 @@ const data = {
 		type: 'Посудомоечные машины',
 		url: 'https://www.dns-shop.ru/product/8ff1c24b72adc824/posudomoecnaa-masina-gorenje-gs620c10s-seryj/',
 	},
-	GS643D90X: {
+	GS643C90W: {
 		caption: 'Посудомоечная машина',
 		modulePhoto: {
-			url: GS643D90X,
-			url2x: GS643D90X2x,
+			url: GS643C90W,
+			url2x: GS643C90W2x,
 		},
 		type: 'Посудомоечные машины',
 		url: 'https://www.dns-shop.ru/product/3b536f7cc230c5e0/posudomoecnaa-masina-gorenje-gs643d90x-serebristyj/',
-	},
+	},/*
 	GT642AXW: {
 		caption: 'Варочная панель',
 		modulePhoto: {
@@ -655,7 +659,7 @@ const data = {
 		},
 		type: 'Варочные панели',
 		url: 'https://www.dns-shop.ru/product/2f4c34eb294f3333/gazovaa-varocnaa-poverhnost-gorenje-gt642axw/',
-	},
+	},/*
 	GTW641AKB: {
 		caption: 'Варочная панель',
 		modulePhoto: {
@@ -664,7 +668,7 @@ const data = {
 		},
 		type: 'Варочные панели',
 		url: 'https://www.dns-shop.ru/product/0b381684b0431c2f/gazovaa-varocnaa-poverhnost-gorenje-gtw641akb/',
-	},
+	},*/
 	GV520E10S: {
 		caption: 'Встраиваемая посудомоечная машины',
 		modulePhoto: {
@@ -674,6 +678,7 @@ const data = {
 		type: 'Встраиваемые посудомоечные машины',
 		url: 'https://www.dns-shop.ru/product/ab89243b29393333/vstraivaemaa-posudomoecnaa-masina-gorenje-gv520e10s/',
 	},
+	/*
 	GV561D10: {
 		caption: 'Встраиваемая посудомоечная машины',
 		modulePhoto: {
@@ -682,7 +687,7 @@ const data = {
 		},
 		type: 'Встраиваемые посудомоечные машины',
 		url: 'https://www.dns-shop.ru/product/58bd7cdbe5a33332/vstraivaemaa-posudomoecnaa-masina-gorenje-gv561d10/',
-	},
+	},*/
 	GV643D60: {
 		caption: 'Встраиваемая посудомоечная машины',
 		modulePhoto: {
@@ -692,6 +697,7 @@ const data = {
 		type: 'Встраиваемые посудомоечные машины',
 		url: 'https://www.dns-shop.ru/product/d3f37d232f11ed20/vstraivaemaa-posudomoecnaa-masina-gorenje-gv643d60/',
 	},
+	/*
 	GV643E90: {
 		caption: 'Встраиваемая посудомоечная машины',
 		modulePhoto: {
@@ -700,7 +706,8 @@ const data = {
 		},
 		type: 'Встраиваемые посудомоечные машины',
 		url: 'https://www.dns-shop.ru/product/8199f3a5060a395d/vstraivaemaa-posudomoecnaa-masina-gorenje-gv643e90/',
-	},
+	},*/
+	/*
 	GV693B67AD: {
 		caption: 'Встраиваемая посудомоечная машины',
 		modulePhoto: {
@@ -709,7 +716,37 @@ const data = {
 		},
 		type: 'Встраиваемые посудомоечные машины',
 		url: 'https://www.dns-shop.ru/product/c96745c85633f100/vstraivaemaa-posudomoecnaa-masina-gorenje-gv693b67ad/',
+	},*/
+	NRKP61EA2XL4: {
+		caption: 'Холодильник двухдверный',
+		modulePhoto: {
+			url: NRKP61EA2XL4,
+			url2x: NRKP61EA2XL42x,
+		},
+		type: 'Холодильники двухдверные',
+		url: 'https://www.dns-shop.ru/product/[product-id]/kholodilnik-s-morozilnikom-gorenje-nrkp61ea2xl4-cernyj/',
 	},
+	
+	NRK51814W4: {
+		caption: 'Холодильник двухдверный',
+		modulePhoto: {
+			url: NRK51814W4,
+			url2x: NRK51814W42x,
+		},
+		type: 'Холодильники двухдверные',
+		url: 'https://www.dns-shop.ru/product/[product-id]/kholodilnik-s-morozilnikom-gorenje-nrk51814w4-belyj/',
+	},
+	
+	NRK6202EBXL4: {
+		caption: 'Холодильник двухдверный',
+		modulePhoto: {
+			url: NRK6202EBXL4,
+			url2x: NRK6202EBXL42x,
+		},
+		type: 'Холодильники двухдверные',
+		url: 'https://www.dns-shop.ru/product/[product-id]/kholodilnik-s-morozilnikom-gorenje-nrk6202ebxl4-cernyj/',
+	},
+	/*
 	NRK620FABK4: {
 		caption: 'Холодильник двухдверный',
 		modulePhoto: {
@@ -736,7 +773,7 @@ const data = {
 		},
 		type: 'Холодильники двухдверные',
 		url: 'https://www.dns-shop.ru/product/33df0514e2963332/vstraivaemyj-kholodilnik-gorenje-nrki4182p1/',
-	},
+	},*/
 	NRR9185EABXLWD: {
 		caption: 'Холодильник Side-by-side',
 		modulePhoto: {
@@ -754,7 +791,7 @@ const data = {
 		},
 		type: 'Холодильники Side-by-side',
 		url: 'https://www.dns-shop.ru/product/c48e6af6e7edbb1f/kholodilnik-side-by-side-gorenje-nrr9185eaxlwd-serebristyj/',
-	},
+	},/*
 	R491PW: {
 		caption: 'Холодильник двухдверный',
 		modulePhoto: {
@@ -763,7 +800,7 @@ const data = {
 		},
 		type: 'Холодильники двухдверные',
 		url: 'https://www.dns-shop.ru/product/50f3cd5356113333/kholodilnik-s-morozilnikom-gorenje-rk4181ps4-seryj/',
-	},
+	},*/
 	/*RKI2181E1: {
 		caption: 'Холодильник двухдверный',
 		modulePhoto: {
