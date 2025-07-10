@@ -26,16 +26,13 @@ import FH30APW from '../../images/products/FH30APW.jpg';
 import FH30APW2x from '../../images/products/FH30APW@2x.jpg';
 import FH451CW from '../../images/products/FH451CW.jpg';
 import FH451CW2x from '../../images/products/FH451CW@2x.jpg';
-import GEC5C41SG from '../../images/products/GEC5C41SG.jpg';
-import GEC5C41SG2x from '../../images/products/GEC5C41SG@2x.jpg';
+
 import GEC5C42WG from '../../images/products/GEC5C42WG.jpg';
 import GEC5C42WG2x from '../../images/products/GEC5C42WG@2x.jpg';
 import GEIT5C61XPG from '../../images/products/GEIT5C61XPG.jpg';
 import GEIT5C61XPG2x from '../../images/products/GEIT5C61XPG@2x.jpg';
-import GG5A12WF from '../../images/products/GG5A12WF.jpg';
-import GG5A12WF2x from '../../images/products/GG5A12WF@2x.jpg';
-import GI6401BCE from '../../images/products/GI6401BCE.jpg';
-import GI6401BCE2x from '../../images/products/GI6401BCE@2x.jpg';
+
+
 import GI6401WSC from '../../images/products/GI6401WSC.jpg';
 import GI6401WSC2x from '../../images/products/GI6401WSC@2x.jpg';
 import GK5C41SF from '../../images/products/GK5C41SF.jpg';
@@ -54,28 +51,23 @@ import GT642AXW from '../../images/products/GT642AXW.jpg';
 import GT642AXW2x from '../../images/products/GT642AXW@2x.jpg';
 import GTW641AKB from '../../images/products/GTW641AKB.jpg';
 import GTW641AKB2x from '../../images/products/GTW641AKB@2x.jpg';
-import GV520E10S from '../../images/products/GV520E10S.jpg';
-import GV520E10S2x from '../../images/products/GV520E10S@2x.jpg';
-import GV561D10 from '../../images/products/GV561D10.jpg';
-import GV561D102x from '../../images/products/GV561D10@2x.jpg';
+
 //import GV643D60 from '../../images/products/GV643D60.jpg';
 //import GV643D602x from '../../images/products/GV643D60@2x.jpg';
-//import GV643E90 from '../../images/products/GV643E90.jpg';
-//import GV643E902x from '../../images/products/GV643E90@2x.jpg';
-//import GV693B67AD from '../../images/products/GV693B67AD.jpg';
-//import GV693B67AD2x from '../../images/products/GV693B67AD@2x.jpg';
-/*import NRK620FABK4 from '../../images/products/NRK620FABK4.jpg';
+import GV643E90 from '../../images/products/GV643E90.jpg';
+import GV643E902x from '../../images/products/GV643E90@2x.jpg';
+
+import NRK620FABK4 from '../../images/products/NRK620FABK4.jpg';
 import NRK620FABK42x from '../../images/products/NRK620FABK4@2x.jpg';
 import NRK620FAW4 from '../../images/products/NRK620FAW4.jpg';
 import NRK620FAW42x from '../../images/products/NRK620FAW4@2x.jpg';
-import NRKI4182P1 from '../../images/products/NRKI4182P1.jpg';
-import NRKI4182P12x from '../../images/products/NRKI4182P1@2x.jpg';
+
 import NRR9185EABXLWD from '../../images/products/NRR9185EABXLWD.jpg';
 import NRR9185EABXLWD2x from '../../images/products/NRR9185EABXLWD@2x.jpg';
 import NRR9185EAXLWD from '../../images/products/NRR9185EAXLWD.jpg';
-import NRR9185EAXLWD2x from '../../images/products/NRR9185EAXLWD@2x.jpg';*/
-//import R491PW from '../../images/products/R491PW.jpg';
-//import R491PW2x from '../../images/products/R491PW@2x.jpg';
+import NRR9185EAXLWD2x from '../../images/products/NRR9185EAXLWD@2x.jpg';
+import R491PW from '../../images/products/R491PW.jpg';
+import R491PW2x from '../../images/products/R491PW@2x.jpg';
 //import RKI2181E1 from '../../images/products/RKI2181E1.jpg';
 //import RKI2181E12x from '../../images/products/RKI2181E1@2x.jpg';
 import W1D2A164ADS from '../../images/products/W1D2A164ADS.jpg';
@@ -90,26 +82,39 @@ import WNS94A1AWIFIC from '../../images/products/WNS94A1AWIFIC.png';
 import W1NHPI72SCSIRV from '../../images/products/W1NHPI72SCSIRV.png';
 import W1NHA74SAS from '../../images/products/W1NHA74SAS.png';
 import WPNEI84A1SWIFIBC from '../../images/products/WPNEI84A1SWIFIBC.png';
-import W2NHPI62SCSS from '../../images/products/W2NHPI62SCSS.png';
-import NRKI4182P1 from '../../images/products/NRKI4182P1.png';
+//import W2NHPI62SCSS from '../../images/products/W2NHPI62SCSS.png';
+import NRKI4182P1 from '../../images/products/NRKI4182P1.jpg';
+import NRKI4182P12x from '../../images/products/NRKI4182P1@2x.jpg';
 import NRKI517141 from '../../images/products/NRKI517141.png';
 import NRKI517162WF from '../../images/products/NRKI517162WF.png';
 import NRKI519141 from '../../images/products/NRKI519141.png';
 import RI517E41WF from '../../images/products/RI517E41WF.png';
 
-
 import GEC5A12SG from '../../images/products/GEC5A12SG.png';
-//import GEC5A12WG-B from '../../images/products/GEC5A12WG-B.jpg';
+import GEC5A12SG2x from '../../images/products/GEC5A12SG.png';
+import GEC5A12WG from '../../images/products/GEC5A12WG.png';
+import GEC5A12WG2x from '../../images/products/GEC5A12WG.png';
 import GK5C40WF from '../../images/products/GK5C40WF.png';
-import GG5A12WF from '../../images/products/GG5A12WF.png';
-import GEC5C41SG from '../../images/products/GEC5C41SG.png';
+import GK5C40WF2x from '../../images/products/GK5C40WF.png';
+import GG5A12WF from '../../images/products/GG5A12WF.jpg';
+import GG5A12WF2x from '../../images/products/GG5A12WF@2x.jpg';
+import GEC5C41SG from '../../images/products/GEC5C41SG.jpg';
+import GEC5C41SG2x from '../../images/products/GEC5C41SG@2x.jpg';
 
 // Добавляем импорты для новых изображений духовых шкафов
 import BO6737E02NX from '../../images/products/BO6737E02NX.jpg';
+import BO6737E02NX2x from '../../images/products/BO6737E02NX.jpg';
 import BOS6737E05DBG from '../../images/products/BOS6737E05DBG.jpg';
+import BOS6737E05DBG2x from '../../images/products/BOS6737E05DBG.jpg';
 import BOS6737E06WG from '../../images/products/BOS6737E06WG.jpg';
-//import BOS6737E06WG2x from '../../images/products/BOS6737E06WG@2x.jpg';
+import BOS6737E06WG2x from '../../images/products/BOS6737E06WG.jpg';
 import GO66E_Pizza350C from '../../images/products/GO66E_Pizza350C.jpg';
+import GO66E_Pizza350C2x from '../../images/products/GO66E_Pizza350C.jpg';
+import GV693A65AD from '../../images/products/GV693A65AD.jpg';
+import GV693A65AD2x from '../../images/products/GV693A65AD.jpg';
+import GV693B67AD from '../../images/products/GV693B67AD.jpg';
+import GV693B67AD2x from '../../images/products/GV693B67AD@2x.jpg';
+
 
 
 //сушилки
@@ -131,8 +136,8 @@ import ECS642BXE from '../../images/products/ECS642BXE.png';
 import ECS642BXE2x from '../../images/products/ECS642BXE.png';
 import ECT64BSCE from '../../images/products/ECT64BSCE.png';
 import ECT64BSCE2x from '../../images/products/ECT64BSCE.png';
-import GI6401BCE from '../../images/products/GI6401BCE.png';
-import GI6401BCE2x from '../../images/products/GI6401BCE.png';
+import GI6401BCE from '../../images/products/GI6401BCE.jpg';
+import GI6401BCE2x from '../../images/products/GI6401BCE@2x.jpg';
 import GI6432BSCE from '../../images/products/GI6432BSCE.png';
 import GI6432BSCE2x from '../../images/products/GI6432BSCE.png';
 import GT642AB from '../../images/products/GT642AB.png';
@@ -141,14 +146,13 @@ import GT642AB2x from '../../images/products/GT642AB.png';
 // встравиваемые посудомоечные машины
 import GV520E10S from '../../images/products/GV520E10S.jpg';
 import GV520E10S2x from '../../images/products/GV520E10S@2x.jpg';
+
 import GV561D10 from '../../images/products/GV561D10.jpg';
 import GV561D102x from '../../images/products/GV561D10@2x.jpg';
 import GV643D60 from '../../images/products/GV643D60.jpg';
 import GV643D602x from '../../images/products/GV643D60@2x.jpg';
 import GV663D62 from '../../images/products/GV663D62.png';
 import GV663D622x from '../../images/products/GV663D62.png';
-import GV693A65AD from '../../images/products/GV693A65AD.jpg';
-import GV693A65AD2x from '../../images/products/GV693A65AD.jpg';
 
 // холодильники
 import NRK6202EBXL4 from '../../images/products/NRK6202EBXL4.png';
@@ -760,7 +764,7 @@ const data = {
 		type: 'Холодильники двухдверные',
 		url: 'https://www.dns-shop.ru/product/50f3cd5356113333/kholodilnik-s-morozilnikom-gorenje-rk4181ps4-seryj/',
 	},
-	RKI2181E1: {
+	/*RKI2181E1: {
 		caption: 'Холодильник двухдверный',
 		modulePhoto: {
 			url: RKI2181E1,
@@ -768,7 +772,7 @@ const data = {
 		},
 		type: 'Холодильники двухдверные',
 		url: 'https://www.dns-shop.ru/product/fc38c383c6ab3330/vstraivaemyj-kholodilnik-gorenje-rki2181e1/',
-	},
+	},*/
 	/*W1D2A164ADS: {
 		caption: 'Стиральная машина',
 		modulePhoto: {
@@ -845,7 +849,7 @@ const data = {
 		caption: 'Стиральная машина',
 		modulePhoto: {
 			url: W2NHPI62SCSS,
-			url2x: W2NHPI62SCSS, // временно та же картинка
+			url2x: W2NHPI62SCSS2x, // временно та же картинка
 		},
 		type: 'Стиральные машины',
 		url: 'https://www.dns-shop.ru/product/',
