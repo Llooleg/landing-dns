@@ -138,8 +138,8 @@ import ECT64BSCE from '../../images/products/ECT64BSCE.png';
 import ECT64BSCE2x from '../../images/products/ECT64BSCE.png';
 import GI6401BCE from '../../images/products/GI6401BCE.jpg';
 import GI6401BCE2x from '../../images/products/GI6401BCE@2x.jpg';
-import GI6432BSCE from '../../images/products/GI6432BSCE.png';
-import GI6432BSCE2x from '../../images/products/GI6432BSCE.png';
+import GI6432BSCE from '../../images/products/GI6432BSCE.jpg';
+import GI6432BSCE2x from '../../images/products/GI6432BSCE@2x.jpg';
 import GT642AB from '../../images/products/GT642AB.jpg';
 import GT642AB2x from '../../images/products/GT642AB.jpg';
 

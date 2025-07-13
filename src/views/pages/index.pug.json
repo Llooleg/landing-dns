@@ -122,14 +122,14 @@
 		},
 		"list": [
 			{
-				"url": "https://www.dns-shop.ru/actions/5514ed86-c008-11ee-91ae-00155d8ed20b/?erid=2SDnjd1H6Up",
+				"url": "https://www.dns-shop.ru/brand/gorenje/",
 				"photo": {
-					"url": "/src/assets/images/posters/sale.jpg",
-					"url2x": "/src/assets/images/posters/sale@2x.jpg",
-					"alt": "Скидки 15% при покупке крупной бытовой техники gorenje!",
+					"url": "/src/assets/images/posters/75-years.jpg",
+					"url2x": "/src/assets/images/posters/75-years@2x.jpg",
+					"alt": "75 лет Gorenje!",
 					"responsivePhoto": [
 						{
-							"url": "/src/assets/images/posters/sale-mobile.jpg 1x, /src/assets/images/posters/sale-mobile@2x.jpg 2x"
+							"url": "/src/assets/images/posters/75-years-mobile.jpg 1x, /src/assets/images/posters/75-years-mobile@2x.jpg 2x"
 						}
 					]
 				}
