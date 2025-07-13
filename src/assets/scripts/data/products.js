@@ -110,8 +110,8 @@ import BOS6737E06WG from '../../images/products/BOS6737E06WG.jpg';
 import BOS6737E06WG2x from '../../images/products/BOS6737E06WG.jpg';
 import GO66E_Pizza350C from '../../images/products/GO66E_Pizza350C.jpg';
 import GO66E_Pizza350C2x from '../../images/products/GO66E_Pizza350C.jpg';
-import GV693A65AD from '../../images/products/GV693A65AD.jpg';
-import GV693A65AD2x from '../../images/products/GV693A65AD.jpg';
+import GV693A65AD from '../../images/products/GV693A65AD.png';
+import GV693A65AD2x from '../../images/products/GV693A65AD.png';
 import GV693B67AD from '../../images/products/GV693B67AD.jpg';
 import GV693B67AD2x from '../../images/products/GV693B67AD@2x.jpg';
 
@@ -266,7 +266,7 @@ const data = {
 			url2x: ECS642BXE2x,
 		},
 		type: 'Варочные панели',
-		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-ecs642bxe/',
+		url: 'https://www.dns-shop.ru/product/1ae7bbc79fc0420f/elektriceskaa-varocnaa-poverhnost-gorenje-ecs642bxe/',
 	},
 	
 	ECT64BSCE: {
@@ -276,7 +276,7 @@ const data = {
 			url2x: ECT64BSCE2x,
 		},
 		type: 'Варочные панели',
-		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-ect64bsce/',
+		url: 'https://www.dns-shop.ru/product/c2a0f8a487b3dd81/elektriceskaa-varocnaa-poverhnost-gorenje-ect64bsce/',
 	},
 	
 	GI6401BCE: {
@@ -286,7 +286,7 @@ const data = {
 			url2x: GI6401BCE2x,
 		},
 		type: 'Варочные панели',
-		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-gi6401bce/',
+		url: 'https://www.dns-shop.ru/product/19483ab88d951c95/indukcionnaa-varocnaa-poverhnost-gorenje-gi6401bce/',
 	},
 	
 	GI6432BSCE: {
@@ -296,7 +296,7 @@ const data = {
 			url2x: GI6432BSCE2x,
 		},
 		type: 'Варочные панели',
-		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-gi6432bsce/',
+		url: 'https://www.dns-shop.ru/product/3e0833f3e8206e99/indukcionnaa-varocnaa-poverhnost-gorenje-gi6432bsce/',
 	},
 	
 	GT642AB: {
@@ -306,7 +306,7 @@ const data = {
 			url2x: GT642AB2x,
 		},
 		type: 'Варочные панели',
-		url: 'https://www.dns-shop.ru/product/c73c7ba7af3a3330/elektriceskaa-varocnaa-poverhnost-gorenje-gt642ab/',
+		url: 'https://www.dns-shop.ru/product/2f4c34e9294f3333/gazovaa-varocnaa-poverhnost-gorenje-gt642ab/',
 	},
 
 
@@ -512,7 +512,7 @@ const data = {
 			url2x: BO6737E02NX2x,
 		},
 		type: 'Духовые шкафы',
-		url: 'https://www.dns-shop.ru/product/bo6737e02nx/',
+		url: 'https://www.dns-shop.ru/product/79dcc9a673dce170/elektriceskij-duhovoj-skaf-gorenje-bo6737e02nx-serebristyj/',
 	},
 	BOS6737E05DBG: {
 		caption: 'Духовой шкаф',
@@ -521,7 +521,7 @@ const data = {
 			url2x: BOS6737E05DBG2x,
 		},
 		type: 'Духовые шкафы',
-		url: 'https://www.dns-shop.ru/product/bos6737e05dbg/',
+		url: 'https://www.dns-shop.ru/product/14302d050c3f4658/elektriceskij-duhovoj-skaf-gorenje-bos6737e05dbg-cernyj/',
 	},
 	BOS6737E06WG: {
 		caption: 'Духовой шкаф',
@@ -530,7 +530,7 @@ const data = {
 			url2x: BOS6737E06WG2x,
 		},
 		type: 'Духовые шкафы',
-		url: 'https://www.dns-shop.ru/product/bos6737e06wg/',
+		url: 'https://www.dns-shop.ru/product/15959019a7be2eb0/elektriceskij-duhovoj-skaf-gorenje-bos6737e06wg-belyj/',
 	},
 	GO66E_Pizza350C: {
 		caption: 'Духовой шкаф',
@@ -539,7 +539,7 @@ const data = {
 			url2x: GO66E_Pizza350C2x,
 		},
 		type: 'Духовые шкафы',
-		url: 'https://www.dns-shop.ru/product/go66e-pizza350c/',
+		url: 'https://www.dns-shop.ru/product/433b2537223f5d28/elektriceskij-duhovoj-skaf-gorenje-go66e-pizza350c-cernyj/',
 	},
 	
 	GEC5C41SG: {
