@@ -188,7 +188,7 @@ class Popup {
 		},
 
 		setPopupContent: ({ popupContent = {} } = {}) => {
-			console.log('popupContent:', popupContent);  
+			//console.log('popupContent:', popupContent);  
 			
 			if (Array.isArray(popupContent)) {
 				const currentContent = this.elements.popup.getAttribute('data-popup-content-current');
@@ -236,8 +236,8 @@ class Popup {
 					const content = popupContent[contentKey];
 					
 					// Отладочные сообщения перенесены ВНУТРЬ цикла
-					console.log('Processing contentKey:', contentKey, 'with content:', content);
-					console.log('Element exists:', !!this.elements.popupContent[contentKey]);
+					//console.log('Processing contentKey:', contentKey, 'with content:', content);
+					//console.log('Element exists:', !!this.elements.popupContent[contentKey]);
 					
 					if (this.elements.popupContent[contentKey]) {
 						if (contentKey === 'iframe') {
@@ -246,14 +246,14 @@ class Popup {
 								this.elements.popupContent[contentKey].setAttribute('src', `${content}?autoplay=1`);
 							}
 						} else if (contentKey === 'video-youtube') {
-							console.log('Setting up YouTube video');
+							//console.log('Setting up YouTube video');
 							this.methods.setupVideoInstance({
 								videoElement: this.elements.popupContent[contentKey],
 								videoKey: content,
 								videoType: 'youtube'
 							});
 						} else if (contentKey === 'video-rutube') {
-							console.log('Setting up Rutube video');
+							//console.log('Setting up Rutube video');
 							this.methods.setupVideoInstance({
 								videoElement: this.elements.popupContent[contentKey],
 								videoKey: content,
@@ -263,14 +263,14 @@ class Popup {
 							this.elements.popupContent[contentKey].textContent = content;
 						}
 					} else {
-						console.warn('Element not found for contentKey:', contentKey);
+						//console.warn('Element not found for contentKey:', contentKey);
 					}
 				});
 			}
 		},
 
 		setupVideoInstance: ({ videoElement, videoKey, videoType = 'youtube' } = {}) => {
-	console.log('setupVideoInstance called with:', { videoElement, videoKey, videoType });
+	//console.log('setupVideoInstance called with:', { videoElement, videoKey, videoType });
 	
 	// Очистка предыдущего видео инстанса если он есть
 	if (this.state.videoInstance) {
@@ -279,7 +279,7 @@ class Popup {
 			(videoType === 'youtube' && this.state.videoInstance?.getVideoUrl && !this.state.videoInstance.getVideoUrl().includes(videoKey)) ||
 			(videoType === 'rutube' && this.state.videoInstance?.videoKey !== videoKey);
 		
-		console.log('Current video type:', currentVideoType, 'Should clear:', shouldClear);
+		//console.log('Current video type:', currentVideoType, 'Should clear:', shouldClear);
 		
 		if (shouldClear) {
 			if (this.state.videoInstance?.destroy) {
@@ -293,7 +293,7 @@ class Popup {
 	}
 
 	if (!this.state.videoInstance) {
-		console.log('Creating new video instance for type:', videoType);
+		//console.log('Creating new video instance for type:', videoType);
 		
 		if (videoType === 'youtube') {
 			// Существующий код для YouTube
@@ -313,7 +313,7 @@ class Popup {
 				}
 			}, 100);
 		} else if (videoType === 'rutube') {
-			console.log('Creating Rutube iframe with videoKey:', videoKey);
+			//console.log('Creating Rutube iframe with videoKey:', videoKey);
 			
 			const iframeHTML = `
 				<iframe 
@@ -328,7 +328,7 @@ class Popup {
 				</iframe>
 			`;
 			
-			console.log('Setting innerHTML:', iframeHTML);
+			//console.log('Setting innerHTML:', iframeHTML);
 			videoElement.innerHTML = iframeHTML;
 			
 			// Создаем простой объект для совместимости с существующим кодом
@@ -336,14 +336,14 @@ class Popup {
 				videoType: 'rutube',
 				videoKey: videoKey,
 				pauseVideo: () => {
-					console.log('Pausing Rutube video');
+					//console.log('Pausing Rutube video');
 					const iframe = videoElement.querySelector('iframe');
 					if (iframe) {
 						iframe.src = iframe.src.replace('?autoplay=1', '').replace('&autoplay=1', '');
 					}
 				},
 				playVideo: () => {
-					console.log('Playing Rutube video');
+					//console.log('Playing Rutube video');
 					const iframe = videoElement.querySelector('iframe');
 					if (iframe && !iframe.src.includes('autoplay=1')) {
 						iframe.src += (iframe.src.includes('?') ? '&' : '?') + 'autoplay=1';
@@ -351,7 +351,7 @@ class Popup {
 				}
 			};
 			
-			console.log('Rutube video instance created:', this.state.videoInstance);
+			//console.log('Rutube video instance created:', this.state.videoInstance);
 		}
 	}
 }
